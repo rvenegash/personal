@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testJarDll", "testJarDll\testJarDll.csproj", "{895F6893-88DB-4609-8097-58E5A320D989}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895F6893-88DB-4609-8097-58E5A320D989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895F6893-88DB-4609-8097-58E5A320D989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895F6893-88DB-4609-8097-58E5A320D989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895F6893-88DB-4609-8097-58E5A320D989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {622EA51C-0C49-42E7-B00C-D84F40A3E316}
+	EndGlobalSection
+EndGlobal

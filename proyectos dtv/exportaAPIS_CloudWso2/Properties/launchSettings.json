@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "exportaAPIS_CloudWso2": {
+      "commandName": "Project"
+    }
+  }
+}

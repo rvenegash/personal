@@ -1,0 +1,2486 @@
+{   "APP": "K2View_AR-CA-CL-CO-EC-PE-UY-VE",
+    "WS": "D:\\WS\\K2View",
+	"REPOSITORIO_PADRE": "DevOps",
+	"ARTIFACTORY_URL": "https://artifact-prod-oci.dtvpan.com/artifactory",
+    "CHECKOUTS": [
+        {
+            "NOMBRE":"CHECKOUT_APP",
+            "SCM_URL":"https://s_ar_prd_jenkins@bitbucket.org/directvla/integration-dev.git",
+            "SCM_PATH":"/13.K2V/" 
+        }
+    ],
+    "ENVIRONMENTS": [
+        {
+            "NAME": "QC-M",
+			"LABEL": "WINDOWS_VM_DTVDEV_NODE_1",
+			"LINUX_LABEL": "OCI&&LINUX&&DTVDEV&&TRADICIONAL",
+			"FABRIC_HOME": "http://172.29.236.20",
+            "FABRIC_SERVER": "172.29.236.19",
+			"INTEGRATION_TESTS_TAG":"@K2VIEW.REG.REGRESION",
+			"PLACEHOLDERS": [
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "aribst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "aribst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_AR_QCM_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "ro2RUdqFb4IoGJMniVLa2F3eZWzf7Uc43k7bWMC/Ejw=:I+MVpMNAEu21VJV8OyeVUTY2+6NGfLGYdGiqI77dC0U="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=aribst-srv.dtvdev.net)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=aribst.dtvdev.net)));User Id=S_AR_QCM_K2VARREADONLY;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@aribst-srv.dtvdev.net:1521/aribst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ARGENTINA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_CHL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CL_QCM_ESBK2V"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "0vsVKkm28G44azE54CMVeXSCPa2YDjXMQ8LArhjDZLI=:VUPNgdZVguWYVnVJ4gPv7Bcqna+YJ39L3nyQbNdaeU4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_CHILE"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_COL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CO_QCM_K2VCOREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "AXevsX2JM2MfCEPEJ7dZ+Jt60ufLWwT0/i9qx+5/3I0=:EccOlneq7HW57Yxydq1sRtV4OKULg6mgYjbuZIecrvc="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibst-srv.dtvdev.net:1521/cnibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_COLOMBIA"
+						}
+					]
+				},	
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ECU.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_EC_QCM_K2VECREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "YnavLc4Khdy7wyATHINmCmzrEPXXyOke2ltB5e5a5qw=:uSzY6p35+yMV7XOl9oCAPOR3L6rc3isuGMOVvcpFzqQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibst-srv.dtvdev.net:1521/cnibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ECUADOR"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PER.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PE_QCM_ESBK2V"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "gfR6D7IraoBCangDzWD/YMH8q9abhzHqiuhNKOeLiro=:fYvAe9R/dwIL6a28sX7FduWcUh4ow2c98L0ew++AmHU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PERU"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PRI.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PR_MIG"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_TTO.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_UY_QCM_ESBK2V"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "5Rff1q1/MLklnDoC7WbvHfgBGoLKYv1SZuIGDHRsK7k=:0COAiA+XYtsogppmY9QAS1uVhWJlxMFGF4+WMafEzBU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY_for_update.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "k2v_directv"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/ZtM6fM+4TlUfmcKhKwT96tC6207nKdRhXib0x0oda4=:WfaPyzIOL9+An0MiiVTUtlAnRse1JRGORkcG/xJv7s4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_VEN.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.34.170"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "dtvprdcs.directvla.com.ve"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_VE_PRD_K2VVEREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "Qj3AW9maaWWG3H6kPsZXBoI3VvvXu8BMYbOVw40v9eg=:IWdjyz09MQNRALJKdaJwCupMZIZDX5nMJAaCMusjtCQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@172.22.34.170:1521/dtvprdcs.directvla.com.ve"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandra.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.19"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "fy5zrExP7UJuS23fqG8DDlwsEKH0lmCe5NTkY6qE/Vk=:Frc7Un+ISojCkhj6wr5rrGCILRRiOhrP5TTx7aEJrzg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.19';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.19:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraOGG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.19"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "y8iyfZhr8b+mjnT4UJxQE/yj0/Z57c4XV4cRHE++J9k=:c9y3xOpoxALMnle9iazOPPftVVweeUYTg8z4mj6TAas="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.19';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.19:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraSync.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.59.209"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "syncuser"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "nuPiDakemPKe1uGRAptwjT5IqTYQ4fD6G5zFZl/i3uE=:fmDcqD0ahnCZwnz34iTCZxpWqbuZJVF95oO45pITixU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.22.59.209';Port=9142;Default Keyspace='';Username='syncuser';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.22.59.209:9142?consistency=LOCAL_ONE&amp;loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('172.22.59.209',9142)&amp;readtimeoutms=500000&amp;connectiontimeoutms=100000&amp;jdbcpooltimeoutms=65000"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabric.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "QADdQsv9zjJ0akmAM7oJ2F0lizDtEpF4JtOm7Ri3H3Y=:49Q/E6olOBrJbB35oQEWuje4hlK3nifmsMXiCUnDj+8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=&lt;HOST&gt;:5124;user=admin;password=[PASSWORD]"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteCOL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbOracle.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "10.21.2.28"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "oracle"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "HIS_USER"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "lm15cNYr3WNlzjID+1v0+BgDGvXCUd6JrAhRaSELnV0=:TZghmCNNrvRvy8Pp5ePPG7hIKCMVBZgbyX2oYG+feEU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@10.21.2.28:1521/oracle"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.2.28)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=oracle)));User Id=HIS_USER;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "HIS_USER"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_CUSTOMER_IDF.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.236.19:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Search.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_HOST",
+							"VALOR": "172.29.174.2:9200"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.236.19:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/DTV_CLOUD_MASTER.k2proj",
+					"PH": [
+						{
+							"NOMBRE": "PH_PROJECTNAME",
+							"VALOR": "DTV_602"
+						}
+					]
+				},
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+                    "PH": [
+                        { 
+                            "NOMBRE": "PH_BOOTSTRAP", 
+                            "VALOR": "172.29.236.17:9093" 
+                        }
+                    ]
+                }
+			]
+        },
+        {
+            "NAME": "QC-P",
+			"LABEL": "WINDOWS_VM_DTVDEV_NODE_1",
+			"LINUX_LABEL": "OCI&&LINUX&&DTVDEV&&TRADICIONAL",
+			"FABRIC_HOME": "http://172.29.236.20",
+            "FABRIC_SERVER": "172.29.236.16",
+			"INTEGRATION_TESTS_TAG":"@K2VIEW.REG.REGRESION",
+			"PLACEHOLDERS": [
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "aribstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "aribstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "businessdata_argentina"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/o19f9g3zyc3UVAi9RVllEPcy4ptNq+KPFhyI5OY9M4=:lrxnlPyiMiS8EkMMxzpuLwJcc10F9lw2hsipVA3z0n8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=aribstj-srv.dtvdev.net)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=aribstj.dtvdev.net)));User Id=businessdata_argentina;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@aribstj-srv.dtvdev.net:1521/aribstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ARGENTINA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_CHL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CL_QCP_ESBK2V"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "0B9H6sENDI4xd+hQ3o8+E/8ruhaF+6RNLzOZ6QLETt8=:4B9fWIZH2HxK6upC3AG5dVgf3C6mvhQJ+z9up4YljRc="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibstj-srv.dtvdev.net:1521/csibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_CHILE"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_COL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CO_QCP_K2VCOREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "DB06SaA29VvK0Jkgwog9/8rZXtSYaQcvJ3pLApWILFw=:AQ4yMD0phsM0xapwifXg8x+GbHdNq6S1/qFw2ZCy7fc="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibstj-srv.dtvdev.net:1521/cnibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_COLOMBIA"
+						}
+					]
+				},	
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ECU.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_EC_QCP_K2VECREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "bpCeUjO+/fnG21PeXvVLCzWfvkfbmJ/mP6TwJW1ulvg=:UMYXDBB0w+wO9eSOpD9ZJVDo59PbLaDbd5K+gBbQMEA="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibstj-srv.dtvdev.net:1521/cnibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ECUADOR"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PER.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PE_QCP_K2VCLREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "b/OBUkSASggQTV+bavC1e/rW7t7lESwnODElBHQ7j4Y=:3eGgPww0A/jKzIDZXacp/8GvSOQ7kTHtdrMTiFj2DDw="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibstj-srv.dtvdev.net:1521/csibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PERU"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PRI.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "rgmau1-scan.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "pribsu"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PR_QA_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "0QbKCScCvUt2UHg1kLU8aNCQT1wcJ39YkRcA2Ti+y/M=:RbGOnWQpdyQNa6WNOaOC8JlV/BeLyaMUZl1uGCaJNrM="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@rgmau1-scan.dtvdev.net:1521/pribsu"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_PR_QA_K2VARREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_TTO.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "rgmau1-scan.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "ttibsu"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CA_QA_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "wv1ucU1bCYdLXQjakKF5P8d6md+e1jIpLINnBlFXMks=:dk+x99OkZ+EuuwQbrkmCV4Xc8r9X6DIBJVx06LIm3aY="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@rgmau1-scan.dtvdev.net:1521/ttibsu"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CA_QA_K2VARREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibstj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_UY_QCP_K2VUYREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "zZFhSkA8lJS5Yceb05bn8LsaKF2/7LvX58zdyh3w5I8=:JyQ3k1vCe3SI5rTjx1OrPRf8AWMHVkOXsdPzv3vI1Tg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibstj-srv.dtvdev.net:1521/csibstj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY_for_update.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "k2v_directv"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/ZtM6fM+4TlUfmcKhKwT96tC6207nKdRhXib0x0oda4=:WfaPyzIOL9+An0MiiVTUtlAnRse1JRGORkcG/xJv7s4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_VEN.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.34.170"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "dtvprdcs.directvla.com.ve"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_VE_PRD_K2VVEREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "Qj3AW9maaWWG3H6kPsZXBoI3VvvXu8BMYbOVw40v9eg=:IWdjyz09MQNRALJKdaJwCupMZIZDX5nMJAaCMusjtCQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@172.22.34.170:1521/dtvprdcs.directvla.com.ve"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandra.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.16"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "fy5zrExP7UJuS23fqG8DDlwsEKH0lmCe5NTkY6qE/Vk=:Frc7Un+ISojCkhj6wr5rrGCILRRiOhrP5TTx7aEJrzg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.16';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.16:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraOGG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.16"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "y8iyfZhr8b+mjnT4UJxQE/yj0/Z57c4XV4cRHE++J9k=:c9y3xOpoxALMnle9iazOPPftVVweeUYTg8z4mj6TAas="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.16';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.16:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraSync.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.59.209"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "syncuser"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "nuPiDakemPKe1uGRAptwjT5IqTYQ4fD6G5zFZl/i3uE=:fmDcqD0ahnCZwnz34iTCZxpWqbuZJVF95oO45pITixU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.22.59.209';Port=9142;Default Keyspace='';Username='syncuser';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.22.59.209:9142?consistency=LOCAL_ONE&amp;loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('172.22.59.209',9142)&amp;readtimeoutms=500000&amp;connectiontimeoutms=100000&amp;jdbcpooltimeoutms=65000"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabric.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "QADdQsv9zjJ0akmAM7oJ2F0lizDtEpF4JtOm7Ri3H3Y=:49Q/E6olOBrJbB35oQEWuje4hlK3nifmsMXiCUnDj+8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=&lt;HOST&gt;:5124;user=admin;password=[PASSWORD]"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteCOL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbOracle.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "10.21.2.28"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "oracle"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "HIS_USER"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "lm15cNYr3WNlzjID+1v0+BgDGvXCUd6JrAhRaSELnV0=:TZghmCNNrvRvy8Pp5ePPG7hIKCMVBZgbyX2oYG+feEU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.2.28)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=oracle)));User Id=HIS_USER;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@10.21.2.28:1521/oracle"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "HIS_USER"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_CUSTOMER_IDF.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.174.2:9093,172.29.174.3:9093,172.29.174.4:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.174.2:9093,172.29.174.3:9093,172.29.174.4:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Search.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_HOST",
+							"VALOR": "172.29.142.39:9200"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/DTV_CLOUD_MASTER.k2proj",
+					"PH": [
+						{
+							"NOMBRE": "PH_PROJECTNAME",
+							"VALOR": "QCP"
+						}
+					]
+				},
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+                    "PH": [
+                        { 
+                            "NOMBRE": "PH_BOOTSTRAP", 
+                            "VALOR": "172.29.236.17:9093" 
+                        }
+                    ]
+                }
+			]
+        },
+        {
+            "NAME": "QA-P",
+			"LABEL": "WINDOWS_VM_DTVDEV_NODE_1",
+			"LINUX_LABEL": "OCI&&LINUX&&DTVDEV&&TRADICIONAL",
+			"FABRIC_HOME": "http://172.29.236.20",
+            "FABRIC_SERVER": "172.29.236.17",
+			"INTEGRATION_TESTS_TAG":"@K2VIEW.REG.REGRESION",
+			"PLACEHOLDERS": [
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "aribsuj-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "aribsuj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_AR_QAP_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "gBUD76VTKYfodmX62zd5mTfnmE6IwTbs6g+MMZJEuWo=:Ych5wPq+8B81MfD1h25czNEGlmqlKh5n1zQNB1vvI54="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=aribsuj-srv.dtvdev.net)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=aribsuj.dtvdev.net)));User Id=S_AR_QAP_K2VARREADONLY;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@aribsuj-srv.dtvdev.net:1521/aribsuj.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ARGENTINA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_CHL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_CHILE"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_COL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_COLOMBIA"
+						}
+					]
+				},	
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ECU.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ECUADOR"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PER.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PERU"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PRI.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_PR_QA_K2VARREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_TTO.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CA_QA_K2VARREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "bFKgtxW6LkxGB8sT6eKMblMYbkbT0kzaBRhA5MCy6ug=:RI8jsSrQUlF/14rSL6gOopd+LIIuVjZ52ucuiM5vSAA="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY_for_update.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "k2v_directv"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/ZtM6fM+4TlUfmcKhKwT96tC6207nKdRhXib0x0oda4=:WfaPyzIOL9+An0MiiVTUtlAnRse1JRGORkcG/xJv7s4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_VEN.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@:1521/"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandra.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.17"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "fy5zrExP7UJuS23fqG8DDlwsEKH0lmCe5NTkY6qE/Vk=:Frc7Un+ISojCkhj6wr5rrGCILRRiOhrP5TTx7aEJrzg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.17';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.17:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraOGG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.236.17"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "y8iyfZhr8b+mjnT4UJxQE/yj0/Z57c4XV4cRHE++J9k=:c9y3xOpoxALMnle9iazOPPftVVweeUYTg8z4mj6TAas="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.236.17';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.236.17:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraSync.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.59.209"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "syncuser"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "nuPiDakemPKe1uGRAptwjT5IqTYQ4fD6G5zFZl/i3uE=:fmDcqD0ahnCZwnz34iTCZxpWqbuZJVF95oO45pITixU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.22.59.209';Port=9142;Default Keyspace='';Username='syncuser';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.22.59.209:9142?consistency=LOCAL_ONE&amp;loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('172.22.59.209',9142)&amp;readtimeoutms=500000&amp;connectiontimeoutms=100000&amp;jdbcpooltimeoutms=65000"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabric.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "QADdQsv9zjJ0akmAM7oJ2F0lizDtEpF4JtOm7Ri3H3Y=:49Q/E6olOBrJbB35oQEWuje4hlK3nifmsMXiCUnDj+8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=&lt;HOST&gt;:5124;user=admin;password=[PASSWORD]"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteCOL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbOracle.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "10.21.2.28"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "oracle"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "HIS_USER"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "lm15cNYr3WNlzjID+1v0+BgDGvXCUd6JrAhRaSELnV0=:TZghmCNNrvRvy8Pp5ePPG7hIKCMVBZgbyX2oYG+feEU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.2.28)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=oracle)));User Id=HIS_USER;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@10.21.2.28:1521/oracle"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "HIS_USER"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_CUSTOMER_IDF.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.236.17:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.236.17:9093"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Search.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_HOST",
+							"VALOR": "172.29.174.2:9200"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/DTV_CLOUD_MASTER.k2proj",
+					"PH": [
+						{
+							"NOMBRE": "PH_PROJECTNAME",
+							"VALOR": "DTV_602"
+						}
+					]
+				},
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+                    "PH": [
+                        { 
+                            "NOMBRE": "PH_BOOTSTRAP", 
+                            "VALOR": "172.29.236.17:9093" 
+                        }
+                    ]
+                }
+			]
+        },
+        {
+            "NAME": "QA-M",
+			"LABEL": "WINDOWS_VM_DTVDEV_NODE_1",
+			"LINUX_LABEL": "OCI&&LINUX&&QAM&&TRADICIONAL",
+			"FABRIC_HOME": "",
+            "FABRIC_SERVER": "172.29.174.2",
+			"CREDENTIALS_ID": "K2V_QAM",
+			"PLACEHOLDERS": [
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "aribsu-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "aribsu.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "businessdata_argentina"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/o19f9g3zyc3UVAi9RVllEPcy4ptNq+KPFhyI5OY9M4=:lrxnlPyiMiS8EkMMxzpuLwJcc10F9lw2hsipVA3z0n8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=aribsu-srv.dtvdev.net)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=aribsu.dtvdev.net)));User Id=businessdata_argentina;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@aribsu-srv.dtvdev.net:1521/aribsu.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ARGENTINA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_CHL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibsu.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CL_QAM_K2VCLREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "A2+BeLAoMGQHBlgIJn66LfNcLwNU+uv74WXfrn+EP9E=:gMRyf6mjP59Qu3KJuBQ22EdL3cocm3u/fvH94C4KNiA="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsu-srv.dtvpan.com:1521/csibsu.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CL_QAM_K2VCLREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_COL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CO_QAM_K2VCOREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "qBNnm8IB3eHt8Mjtc83PoWE1ueb/ocjnR+zrsj5yJA0=:FrUQR0EVCZrttJ12J9D09bVmFGu6NvHoyVbEKtFAluE="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibsu-srv.dtvpan.com:1521/cnibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CO_QAM_K2VCOREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ECU.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_EC_QAM_K2VECREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "0wHTSo1BEULnFzaXcolw9NK7ZtlWUUJdi+dTaISge3w=:tZClnud098pcrerpIdnKtzKp9m/QreIxGdKmmFj9iwI="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibsu-srv.dtvpan.com:1521/cnibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_EC_QAM_K2VECREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PER.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibsu.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PE_QAM_K2VPEREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "UNUg9A3hUDSQ8ckHqCd/7lavTN5OKHm8IV55wDLZJgw=:p3UIYSw+Kt3B0etDIb1QRyVFnGhkdl2QWdodUVb4/nQ="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsu-srv.dtvpan.com:1521/csibsu.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_PE_QAM_K2VPEREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PRI.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "pribsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "pribsu.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PR_QA_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "0QbKCScCvUt2UHg1kLU8aNCQT1wcJ39YkRcA2Ti+y/M=:RbGOnWQpdyQNa6WNOaOC8JlV/BeLyaMUZl1uGCaJNrM="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@pribsu-srv.dtvpan.com:1521/pribsu.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_PR_QA_K2VARREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_TTO.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "caibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "caibsu.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CA_QAM_ESB_K2V"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "HMRtTaCjgOiWVYCXB006dgxnc1rFQjDvAm/lOANdVZM=:KEKIxbC+l+1Nnj+Jt6tMykopYT8yk4N/lNk3myfeomo="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@caibsu-srv.dtvpan.com:1521/caibsu.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CA_QAM_ESB_K2V"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsu-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibsu.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_UY_QAM_K2VUYREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "6a71GmCQwq/EWWJqoqmzwEeHAMSrxXNzAWTIjEkB1kA=:IGmOUpfvpvscoCgnQDwTbvzkbKVfT/1EaV0Y5Ho4QoU="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsu-srv.dtvpan.com:1521/csibsu.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_UY_QAM_K2VUYREADONLY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY_for_update.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "k2v_directv"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/ZtM6fM+4TlUfmcKhKwT96tC6207nKdRhXib0x0oda4=:WfaPyzIOL9+An0MiiVTUtlAnRse1JRGORkcG/xJv7s4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_VEN.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.34.170"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "dtvprdcs.directvla.com.ve"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_VE_PRD_K2VVEREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "Qj3AW9maaWWG3H6kPsZXBoI3VvvXu8BMYbOVw40v9eg=:IWdjyz09MQNRALJKdaJwCupMZIZDX5nMJAaCMusjtCQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@172.22.34.170:1521/dtvprdcs.directvla.com.ve"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandra.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.173.2"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "fy5zrExP7UJuS23fqG8DDlwsEKH0lmCe5NTkY6qE/Vk=:Frc7Un+ISojCkhj6wr5rrGCILRRiOhrP5TTx7aEJrzg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.173.2';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.173.2:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraOGG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.173.2"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "y8iyfZhr8b+mjnT4UJxQE/yj0/Z57c4XV4cRHE++J9k=:c9y3xOpoxALMnle9iazOPPftVVweeUYTg8z4mj6TAas="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.173.2';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.173.2:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraSync.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.59.209"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "syncuser"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "nuPiDakemPKe1uGRAptwjT5IqTYQ4fD6G5zFZl/i3uE=:fmDcqD0ahnCZwnz34iTCZxpWqbuZJVF95oO45pITixU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.22.59.209';Port=9142;Default Keyspace='';Username='syncuser';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.22.59.209:9142?consistency=LOCAL_ONE&amp;loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('172.22.59.209',9142)&amp;readtimeoutms=500000&amp;connectiontimeoutms=100000&amp;jdbcpooltimeoutms=65000"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabric.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "QADdQsv9zjJ0akmAM7oJ2F0lizDtEpF4JtOm7Ri3H3Y=:49Q/E6olOBrJbB35oQEWuje4hlK3nifmsMXiCUnDj+8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=&lt;HOST&gt;:5124;user=admin;password=[PASSWORD]"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteCOL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbOracle.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "10.21.2.28"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "oracle"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "HIS_USER"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "lm15cNYr3WNlzjID+1v0+BgDGvXCUd6JrAhRaSELnV0=:TZghmCNNrvRvy8Pp5ePPG7hIKCMVBZgbyX2oYG+feEU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.2.28)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=oracle)));User Id=HIS_USER;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@10.21.2.28:1521/oracle"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "HIS_USER"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_CUSTOMER_IDF.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.174.2:9093,172.29.174.3:9093,172.29.174.4:9093"
+						},
+						{
+							"NOMBRE": "PH_SSLENABLED",
+							"VALOR": "false"
+						},
+						{
+							"NOMBRE": "PH_TRUSTLOCATION",
+							"VALOR": "/home/k2view/.kafka_ssl/kafka.client.truststore.jks"
+						},
+						{
+							"NOMBRE": "PH_KEYLOCATION",
+							"VALOR": "/home/k2view/.kafka_ssl/kafka.client.keystore.jks"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Search.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_HOST",
+							"VALOR": "172.29.174.2:9200"
+						}
+					]
+				},
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+                    "PH": [
+                        { 
+                            "NOMBRE": "PH_BOOTSTRAP", 
+                            "VALOR": "172.29.174.2:9093,172.29.174.3:9093,172.29.174.4:9093" 
+                        },
+						{
+							"NOMBRE": "PH_SSLENABLED",
+							"VALOR": "false"
+						},
+						{
+							"NOMBRE": "PH_TRUSTLOCATION",
+							"VALOR": "/home/k2view/.kafka_ssl/kafka.client.truststore.jks"
+						},
+						{
+							"NOMBRE": "PH_KEYLOCATION",
+							"VALOR": "/home/k2view/.kafka_ssl/kafka.client.keystore.jks"
+						}
+                    ]
+                },
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/SharedGlobals.java",
+                    "PH": [
+                        { 
+                            "NOMBRE": "oci-prd-dlkstr-stream-omh-k2v-response-0", 
+                            "VALOR": "oci-dev-dlkstr-stream-omh-k2v-response-0" 
+                        }
+                    ]
+                }
+			]
+        },
+        {
+            "NAME": "PRD",
+			"LABEL": "OCI&&WINDOWS&&DTVPAN&&TRADICIONAL",
+			"LINUX_LABEL": "OCI&&LINUX&&DTVPAN&&TRADICIONAL",
+			"FABRIC_HOME": "",
+            "FABRIC_SERVER": "172.29.169.6",
+			"CREDENTIALS_ID": "K2V_PRD",
+			"PLACEHOLDERS": [
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "aribsp-srv.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "aribsesbs.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_AR_PRD_K2VARREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "DN0x8mBkSBrPP9tgUWjxe4BJ1Wgfc5sOejhyC5d8XDs=:3FVi+s+GE4efc1Q82BnnEGWUp8CFeVAjb0s0VUr5FYQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=aribsp-srv.dtvpan.com)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=aribsesbs.dtvpan.com)));User Id=S_AR_PRD_K2VARREADONLY;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@aribsp-srv.dtvpan.com:1521/aribsesbs.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ARGENTINA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_CHL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "clibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CL_PRD_K2VCLReadOnly"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "p9OdYkS8KlA8OFcc8cXBDl83lAkAVugyr912lbN3kow=:jGWYY0tYm/qT91KUo65ENw4sFoM3+TyKAda74TVnaEM="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsp-srv.dtvpan.com:1521/clibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_CHILE"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_COL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CO_PRD_K2VECREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "APqGXK6pexEaC80l17JvNvbVyriN3CnwIXIspt6MFYg=:x1bqBEGxayS7E16q+OIn1b32+iPIuMAriEmbACKw0Ug="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibsp-srv.dtvpan.com:1521/cnibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_COLOMBIA"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_ECU.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "cnibsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "cnibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_EC_PRD_ESB_IBS"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "cRzQl2zkJZyDM/U3cYwNpPuTH0dH+yCslbeGEyA7DJU=:zvDQ3hngFy0NCaLkND/MnIocBRYmbOPGKeenB9yD3z8="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@cnibsp-srv.dtvpan.com:1521/cnibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_ECUADOR"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PER.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "peibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PE_PRD_K2VPEReadOnly"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "ZI9PilzdQvxIhQ8DYKSbXPdqh4JHy+vaUcheKql+pkI=:BAo5DX2UMJLnBkZNYBzaPz+1ZDYYdE0aG/81DUwSLTY="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsp-srv.dtvpan.com:1521/peibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PERU"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_PRI.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "pribsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "pribsp.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_PR_PRD_K2VPRReadOnly"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "AJS3lGD39BQJcV0MlD9ZZ4CCfdStIvRQJBqY5bNEO0g=:tMg03eXx6jPuCVpNOmfsqMuvFsNtDtfsC6ZsbHtodh8="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@pribsp-srv.dtvpan.com:1521/pribsp.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_PR_MIG"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_TTO.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "rgbisdbdvm59704-qbwx92.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "caibssass.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_CA_PRD_K2VCAREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "2UWwsvbolj5cRTyEbnUPXXns3limj0A66GL1QZBJQuw=:ABd0NzsggURb4KFiqznDsSXufA/AZYxJax0qf8Nw/4E="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@rgbisdbdvm59704-qbwx92.dtvpan.com:1521/caibssass.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "S_CA_PRD_IBSONLINE"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibsp-srv.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "uyibssats.dtvpan.com"
+						},	
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_UY_PRD_K2VUYREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "67n2S9z75XhLFD6V1EP89ghF4a/SijG3444KOwCof7M=:gO5C7u10BulN38sVPV5GF8D8J1Qm80WjiqxLCYCLts4="
+						},						
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibsp-srv.dtvpan.com:1521/uyibssats.dtvpan.com"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_URY_for_update.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "csibst-srv.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "k2v_directv"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "/ZtM6fM+4TlUfmcKhKwT96tC6207nKdRhXib0x0oda4=:WfaPyzIOL9+An0MiiVTUtlAnRse1JRGORkcG/xJv7s4="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@csibst-srv.dtvdev.net:1521/csibst.dtvdev.net"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "BUSINESSDATA_URUGUAY"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/IBS_VEN.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.34.170"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "dtvprdcs.directvla.com.ve"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "S_VE_PRD_K2VVEREADONLY"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "Qj3AW9maaWWG3H6kPsZXBoI3VvvXu8BMYbOVw40v9eg=:IWdjyz09MQNRALJKdaJwCupMZIZDX5nMJAaCMusjtCQ="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@172.22.34.170:1521/dtvprdcs.directvla.com.ve"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandra.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.168.6"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "fy5zrExP7UJuS23fqG8DDlwsEKH0lmCe5NTkY6qE/Vk=:Frc7Un+ISojCkhj6wr5rrGCILRRiOhrP5TTx7aEJrzg="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.168.6';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.168.6:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraOGG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.168.6"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "cassandra"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "y8iyfZhr8b+mjnT4UJxQE/yj0/Z57c4XV4cRHE++J9k=:c9y3xOpoxALMnle9iazOPPftVVweeUYTg8z4mj6TAas="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.29.168.6';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.29.168.6:9042?consistency=QUORUM"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbCassandraSync.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.22.59.209"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "syncuser"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "nuPiDakemPKe1uGRAptwjT5IqTYQ4fD6G5zFZl/i3uE=:fmDcqD0ahnCZwnz34iTCZxpWqbuZJVF95oO45pITixU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Contact Points='172.22.59.209';Port=9142;Default Keyspace='';Username='syncuser';Password='[PASSWORD]';"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:cassandra://172.22.59.209:9142?consistency=LOCAL_ONE&amp;loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('172.22.59.209',9142)&amp;readtimeoutms=500000&amp;connectiontimeoutms=100000&amp;jdbcpooltimeoutms=65000"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabric.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "QADdQsv9zjJ0akmAM7oJ2F0lizDtEpF4JtOm7Ri3H3Y=:49Q/E6olOBrJbB35oQEWuje4hlK3nifmsMXiCUnDj+8="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=&lt;HOST&gt;:5124;user=admin;password=[PASSWORD]"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteARG.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbFabricRemoteCOL.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "172.29.142.39"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "admin"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "CJCoUsDAV+BdhJLYV8g4lLtt8GzCrQhZVPsctmVfJGM=:8JblKMEUiDTcpVfh5vDpSLO/fmmxs9RQ39HVr+nlA5Y="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "urls=172.29.142.39:5124;user=admin;password=[PASSWORD]"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:fabric://172.29.142.39:5124"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/Databases/dbOracle.k2dbConn.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_DATASOURCE",
+							"VALOR": "10.21.2.28"
+						},
+						{
+							"NOMBRE": "PH_DATABASE",
+							"VALOR": "oracle"
+						},
+						{
+							"NOMBRE": "PH_USER",
+							"VALOR": "HIS_USER"
+						},
+						{
+							"NOMBRE": "PH_PASSWORD",
+							"VALOR": "lm15cNYr3WNlzjID+1v0+BgDGvXCUd6JrAhRaSELnV0=:TZghmCNNrvRvy8Pp5ePPG7hIKCMVBZgbyX2oYG+feEU="
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRINGCLIENT",
+							"VALOR": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.2.28)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=oracle)));User Id=HIS_USER;Password=[PASSWORD];"
+						},
+						{
+							"NOMBRE": "PH_CONNECTIONSTRING",
+							"VALOR": "jdbc:oracle:thin:@10.21.2.28:1521/oracle"
+						},
+						{
+							"NOMBRE": "PH_SCHEMA",
+							"VALOR": "HIS_USER"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_CUSTOMER_IDF.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_BOOTSTRAP",
+							"VALOR": "172.29.169.6:9093,172.29.169.7:9093,172.29.169.8:9093"
+						},
+						{
+							"NOMBRE": "PH_SSLENABLED",
+							"VALOR": "true"
+						},
+						{
+							"NOMBRE": "PH_TRUSTLOCATION",
+							"VALOR": "/opt/apps/k2view/.kafka_ssl/kafka.client.truststore.jks"
+						},
+						{
+							"NOMBRE": "PH_KEYLOCATION",
+							"VALOR": "/opt/apps/k2view/.kafka_ssl/kafka.client.keystore.jks"
+						}
+					]
+				},
+				{
+					"PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Search.k2interface.xml",
+					"PH": [
+						{
+							"NOMBRE": "PH_HOST",
+							"VALOR": "172.29.169.6:9200"
+						}
+					]
+				},
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Interfaces/GenericInterfaces/Kafka_OMNI.k2interface.xml",
+                    "PH": [
+                        { 
+                            "NOMBRE": "PH_BOOTSTRAP", 
+                            "VALOR": "172.29.174.2:9093,172.29.174.3:9093,172.29.174.4:9093" 
+                        },
+						{
+							"NOMBRE": "PH_SSLENABLED",
+							"VALOR": "false"
+						},
+						{
+							"NOMBRE": "PH_TRUSTLOCATION",
+							"VALOR": "/opt/apps/k2view/.kafka_ssl/kafka.client.truststore.jks"
+						},
+						{
+							"NOMBRE": "PH_KEYLOCATION",
+							"VALOR": "/opt/apps/k2view/.kafka_ssl/kafka.client.keystore.jks"
+						}
+                    ]
+                },
+                {
+                    "PATH": "13.K2V/DTV_K2V_CLOUD/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/SharedGlobals.java",
+                    "PH": [
+                        { 
+                            "NOMBRE": "oci-prd-dlkstr-stream-omh-k2v-response-0", 
+                            "VALOR": "oci-dev-dlkstr-stream-omh-k2v-response-0" 
+                        }
+                    ]
+                }
+			]
+        }
+    ],
+    "MAILS_NOTIFICATION_TO":"directv_esb_devops@accenture.com;ffuente1@directvla.com.ar;rm_alm@directvla.com.ar",
+    "MAILS_NOTIFICATION_CC":""
+}

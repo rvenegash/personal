@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "revisaProyectosSCA_V2": {
+      "commandName": "Project",
+      "commandLineArgs": "/run1"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+﻿/* Operaciones que están en GIT y NO en OER */
+select * from operations where (name, service_name )not in (
+select a1.name operation_name, a2.name service_name
+from  ASSET_RELATION ar2, asset a2, asset a1
+where  ar2.RELATION_TYPE = 108 and ar2.RELATED_ASSET_ID = a2.id and
+a1.id = ar2.ASSET_ID)
+order by 2,1;
+
+
+/* Operaciones que están en OER y NO en GIT */
+select a1.name operation_name, a2.name service_name
+from  ASSET_RELATION ar2, asset a2, asset a1
+where  ar2.RELATION_TYPE = 108 and ar2.RELATED_PS = 'P' and ar2.RELATED_ASSET_ID = a2.id and a2.type in (154) and
+a1.id = ar2.ASSET_ID and 
+(a1.name , a2.name) not in
+(select name, service_name from operations
+)
+order by 2,1 ;
+
+
+SQLs para buscar assets
+
+select a.name, a2.name service_name
+from ASSET_RELATION ar, asset a, ASSET_RELATION ar2, asset a2
+where ar.asset_id = 50346 and ar.RELATED_ASSET_ID = a.id and ar.RELATED_PS = 'P' and ar.RELATION_TYPE = 50000 and
+a.id = ar2.ASSET_ID and ar2.RELATED_ASSET_ID = a2.id and ar2.RELATED_PS = 'P' and ar2.RELATION_TYPE = 108 ;
+
+
+select *
+from  ASSET_RELATION ar2, asset a2
+where ar2.asset_id = 50121 and 
+ar2.RELATED_ASSET_ID = a2.id and ar2.RELATED_PS = 'P' and ar2.RELATION_TYPE = 108 ;
+
+select a1.name operation_name, a2.name service_name
+from  ASSET_RELATION ar2, asset a2, asset a1
+where  ar2.RELATION_TYPE = 108 and ar2.RELATED_ASSET_ID = a2.id and
+a1.id = ar2.ASSET_ID;
+
+
+select o.name, o.service_name, a.cant_invocaciones cant_oer, o.cant_invocaciones cant_git
+from asset a, operations o
+where a.id = o.asset_id and  a.cant_invocaciones != o.cant_invocaciones;
+
+
+select distinct ar.operation_invoked, ar.service_invoked
+from operations o, operations_rel ar
+where ar.operation_name = o.name and ar.service_name = o.service_name and
+o.name = 'SwapServiceForCustomer'
+order by 2,1;
+
+
+/* actualiza asset id en operations */
+update operations o
+set asset_id = (select a1.id
+from  ASSET_RELATION ar2, asset a2, asset a1
+where  ar2.RELATION_TYPE = 108 and ar2.RELATED_ASSET_ID = a2.id and
+a1.id = ar2.ASSET_ID and a1.name = o.name and  a2.name = o.service_name)
+where (name, service_name ) in (
+select a1.name operation_name, a2.name service_name
+from  ASSET_RELATION ar2, asset a2, asset a1
+where  ar2.RELATION_TYPE = 108 and ar2.RELATED_ASSET_ID = a2.id and
+a1.id = ar2.ASSET_ID)
+;
+
+
+update operations o
+set cant_invocaciones = 
+(select count ( distinct ar.operation_invoked || '.' || ar.service_invoked)
+from operations_rel ar
+where ar.operation_name = o.name and ar.service_name = o.service_name);
+
+
+update asset a1
+set cant_invocaciones = 
+(select count(*)
+from ASSET_RELATION ar
+where ar.asset_id = a1.id and ar.RELATED_PS = 'P' and ar.RELATION_TYPE = 50000);
+
+
+
+
+
+
+
+delete from OPERATIONS_REL
+where OPERATION_INVOKED = 'ResolveException' and SERVICE_INVOKED in ('FaultHandler', 'FaultHandlerService');
+
+
+
+
+/* muestra los distintos tipos de assets como están relacionados    */
+select a2.type, rt2.NAME, a.type, rt.NAME, count(*)
+from ASSET_RELATION ar, asset a , asset a2 , ASSET_TYPE rt2, ASSET_TYPE rt
+where  ar.RELATION_TYPE = 50000 and ar.RELATED_ASSET_ID = a.id and ar.ASSET_ID = a2.id and ar.RELATED_PS = 'P' 
+and  a2.type = rt2.id and a.type = rt.id
+group by a2.type, rt2.NAME, a.type, rt.NAME;
+
+
+
+
+
+
+/* busca relaciones en GIT, no en OER */
+
+select opr.INVOKED_ASSET_ID , opr.OPERATION_INVOKED , opr.INVOKED_PORT_TYPE ,  opr.SERVICE_INVOKED
+from operations_rel opr
+inner join operations o on opr.PORT_TYPE || '.' || opr.operation_name = o.real_name 
+where o.ASSET_ID is not null and opr.INVOKED_ASSET_ID not in (
+select a2.id
+from ASSET_RELATION ar, asset a , asset a2 
+where  ar.RELATION_TYPE = 50000 and ar.RELATED_ASSET_ID = a.id and ar.ASSET_ID = a2.id and ar.RELATED_PS = 'S' and 
+a2.type = 50004 and a.type = 50004 and
+a.id = o.ASSET_ID
+) and o.ASSET_ID = 50316;
+
+/* busca relaciones en OER, no en GIT */
+
+select  a.id, a.real_name, ar.RELATION_TYPE --, a2.id
+from ASSET_RELATION ar, asset a , asset a2 
+where ar.RELATION_TYPE = 50000 and ar.RELATED_ASSET_ID = a.id and ar.ASSET_ID = a2.id and ar.RELATED_PS = 'P' and 
+a2.type = 50004 and a.type = 50004 and
+a.id not in ( 
+select opr.INVOKED_ASSET_ID 
+from operations_rel opr
+inner join operations o on opr.PORT_TYPE || '.' || opr.operation_name = o.real_name
+where o.ASSET_ID = ar.ASSET_id ) and a2.id = 51401;

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongoTest", "mongoTest.csproj", "{614E599E-75BD-4D55-8180-2B9BEF47C315}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mongoTestCore", "..\mongoTestCore\mongoTestCore.csproj", "{B34FD4D2-0ED5-4DE2-AA7C-B5EEAEB5DEF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kafkaTest", "..\kafkaTest\kafkaTest.csproj", "{8F67B7CA-7642-4994-B2A4-1DA4F03BED76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "com.dtvla.newk2view.customerproducts", "..\com.dtvla.newk2view.customerproducts\com.dtvla.newk2view.customerproducts.csproj", "{B00BC9FC-C508-4ED0-88D7-408250EB28EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.dtvla.newk2view.api.view360", "..\com.dtvla.newk2view.api.view360\com.dtvla.newk2view.api.view360.csproj", "{31BD6FF6-9882-4AD6-8AD0-64FBF055B058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.dtvla.newk2view.clases", "..\com.dtvla.newk2view.clases\com.dtvla.newk2view.clases.csproj", "{A6A51BAF-6732-433F-BAC6-C83121159B60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{614E599E-75BD-4D55-8180-2B9BEF47C315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614E599E-75BD-4D55-8180-2B9BEF47C315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614E599E-75BD-4D55-8180-2B9BEF47C315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614E599E-75BD-4D55-8180-2B9BEF47C315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34FD4D2-0ED5-4DE2-AA7C-B5EEAEB5DEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34FD4D2-0ED5-4DE2-AA7C-B5EEAEB5DEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34FD4D2-0ED5-4DE2-AA7C-B5EEAEB5DEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34FD4D2-0ED5-4DE2-AA7C-B5EEAEB5DEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F67B7CA-7642-4994-B2A4-1DA4F03BED76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F67B7CA-7642-4994-B2A4-1DA4F03BED76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F67B7CA-7642-4994-B2A4-1DA4F03BED76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F67B7CA-7642-4994-B2A4-1DA4F03BED76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00BC9FC-C508-4ED0-88D7-408250EB28EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00BC9FC-C508-4ED0-88D7-408250EB28EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00BC9FC-C508-4ED0-88D7-408250EB28EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00BC9FC-C508-4ED0-88D7-408250EB28EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BD6FF6-9882-4AD6-8AD0-64FBF055B058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BD6FF6-9882-4AD6-8AD0-64FBF055B058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BD6FF6-9882-4AD6-8AD0-64FBF055B058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BD6FF6-9882-4AD6-8AD0-64FBF055B058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A51BAF-6732-433F-BAC6-C83121159B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A51BAF-6732-433F-BAC6-C83121159B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A51BAF-6732-433F-BAC6-C83121159B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A51BAF-6732-433F-BAC6-C83121159B60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03B64656-D348-46CE-81D1-03FB5C6F24AB}
+	EndGlobalSection
+EndGlobal
