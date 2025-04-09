@@ -13,7 +13,7 @@ namespace revisaProyectosSCA_V2
                 switch (args[0])
                 {
                     case "/run1":
-                        var revisa = new revisaSCA();
+                        var revisa = new revisaSCAfile(); //new revisaSCA();
                         revisa.procesar();
                         break;
                     case "/run2":

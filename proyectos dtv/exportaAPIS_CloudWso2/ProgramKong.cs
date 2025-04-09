@@ -173,7 +173,7 @@ namespace exportaAPIS_CloudWso2
         public static void ExportaApisKongTxt(string[] args) //exporta apis de kong 
         {
             IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
-            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqcm.json", optional: true, reloadOnChange: true).Build();
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
 
             IConfigurationSection config = configRoot.GetSection("MySettings");
             string apiUrl = config.GetSection("urlKongAdmin").Value;
@@ -193,7 +193,7 @@ namespace exportaAPIS_CloudWso2
             client.DefaultRequestHeaders.Add("Kong-Admin-Token", authKong);
             //client.DefaultRequestHeaders.Add("Host", "api-manager-qcm.dtvdev.net");
 
-            var archivo = rutaDestino + "\\listado.txt";
+            var archivo = rutaDestino + "\\listado-apis-kong.txt";
             Console.WriteLine(archivo);
             StreamWriter sw = new StreamWriter(archivo, false);
 
