@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CompareJsonsFDVK2V": {
+      "commandName": "Project",
+      "commandLineArgs": "https://customerinfo-fdv-360view-qam.dtvpan.com/api/GetCustomer360View?token=12354&i_customer=53603221&i_country=UY&i_sync_on=1&format=json http://rgqamk2v.dtvpan.com:3213/api/GetCustomer360View?token=1234&i_customer=53603221&i_requestId=123456&i_systemId=K2V&i_country=UY&i_sync_on=1&format=json"
+    }
+  }
+}
