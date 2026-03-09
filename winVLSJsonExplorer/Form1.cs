@@ -32,6 +32,8 @@ namespace winVLSJsonExplorer
 
         private void bCargar_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
+
             var sr = new StreamReader(openFileDialog1.FileName);
             var apiText = sr.ReadToEnd();
             var apiObj = System.Text.Json.JsonSerializer.Deserialize<VLSResponseDto>(apiText);
@@ -73,6 +75,9 @@ namespace winVLSJsonExplorer
                         {
                             node.NodeFont = new Font(treeView1.Font, (eventO.PurchaseInfo is null) ? FontStyle.Regular : FontStyle.Bold);
                             nodeE1.EnsureVisible();
+
+                            TreeNode nodeEP1 = new TreeNode($"{eventO.PurchaseInfo.IppvId}//{eventO.PurchaseInfo.TierPrice}//{eventO.PurchaseInfo.IppvExpireDt}");
+                            nodeE1.Nodes.Add(nodeEP1);
                         }
                         nodeE.Nodes.Add(nodeE1);
                     }
@@ -267,6 +272,7 @@ namespace winVLSJsonExplorer
                     //}
                 }
             }
+            this.Cursor = Cursors.Default;
 
 
         }
