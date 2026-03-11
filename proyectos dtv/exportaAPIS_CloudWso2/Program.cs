@@ -11,10 +11,9 @@ namespace exportaAPIS_CloudWso2
             //ProgramKong.CreaRolesParaDevDesdeArchivo(args); //portal
             //ProgramKong.CambiaRolesFilesSpec(args);
             //ProgramKong.DeshabilitarPluginsACL(args);
-            ProgramKong.ExportaApisKongTxt(args);
+            //ProgramKong.ExportaApisKongTxt(args);
             //ProgramKong.ExportaFilesSpec(args);
             //ProgramKong.EditaServicesTimeout(args);
-            //ProgramKong.EditaServicesRoles(args);
             //ProgramKong.MigrarCuentasPortalAConsumer(args);
             //ProgramKong.CreaRolesParaConsumersDesdeArchivo(args);
             //ProgramKong.ExportaConsumersRolesAArchivo(args);
@@ -27,12 +26,18 @@ namespace exportaAPIS_CloudWso2
             //ProgramKong.RenombraConsumersRoles(args);
             //ProgramKong.PluginsACL_Allow_Faltante(args);
             //ProgramKong.ExportaACLSRutasKongTxt(args);
+            //ProgramKong.RevisaRoutesConRegex(args);
+            //ProgramKong.TokensDeConsumersAArchivo(args);
+
+            ProgramKong.CopiaAclsEntreConsumers(args);
 
             //ProgramWso2.Main_exportarcsv(args);
             //ProgramWso2.Main_ExportaArchivo(args);
             //ProgramWso2.ExportaAMySql(args);
-            
+
             //ProgramWso2.Main_DeprecarAPIS(args);
+
+            //ProgramQradar.ConsultaConsumoApi(args);
 
             //ProgramOtros.armaArrays(args);
         }

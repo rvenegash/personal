@@ -172,8 +172,8 @@ namespace exportaAPIS_CloudWso2
 
         public static void ExportaApisKongTxt(string[] args) //exporta apis de kong 
         {
-            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
-            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
+            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
 
             IConfigurationSection config = configRoot.GetSection("MySettings");
             string apiUrl = config.GetSection("urlKongAdmin").Value;
@@ -193,7 +193,7 @@ namespace exportaAPIS_CloudWso2
             client.DefaultRequestHeaders.Add("Kong-Admin-Token", authKong);
             //client.DefaultRequestHeaders.Add("Host", "api-manager-qcm.dtvdev.net");
 
-            var archivo = rutaDestino + "\\listado-apis-kong.txt";
+            var archivo = rutaDestino + "\\listado-apis-open-kong.txt";
             Console.WriteLine(archivo);
             StreamWriter sw = new StreamWriter(archivo, false);
 
@@ -231,7 +231,7 @@ namespace exportaAPIS_CloudWso2
                                 }
                             }
 
-                            sw.WriteLine("{0},{1},{2},{3},{4}", i.id, i.name, i.paths[0], i.service.host, i.service.path);
+                            sw.WriteLine($"{i.id},{i.name},{i.paths[0]},{i.service.protocol},{i.service.host},{i.service.port},{i.service.path}");
                         }
 
                         if (string.IsNullOrEmpty(app.next))
@@ -255,10 +255,10 @@ namespace exportaAPIS_CloudWso2
             Console.WriteLine("Fin");
         }
 
-          public static void ExportaACLSRutasKongTxt(string[] args) //exporta apis de kong 
+        public static void ExportaACLSRutasKongTxt(string[] args) //exporta apis de kong 
         {
             IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
-            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqcm.json", optional: true, reloadOnChange: true).Build();
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
 
             IConfigurationSection config = configRoot.GetSection("MySettings");
             string apiUrl = config.GetSection("urlKongAdmin").Value;
@@ -313,19 +313,20 @@ namespace exportaAPIS_CloudWso2
                                 JsonNode root = document.Root;
                                 JsonArray appData = (JsonArray)root["data"];
                                 string appNext = (string)root["next"];
-                                
+
                                 foreach (JsonObject iAcl in appData)
                                 {
                                     string piId = (string)iAcl["id"]!;
                                     string piName = (string)iAcl["name"]!;
-                                    
-                                    if (piName=="acl")
+
+                                    if (piName == "acl")
                                     {
                                         string allow = (string)iAcl["config"]["allow"][0]!;
+                                        string hideGroups = ((bool)iAcl["config"]["hide_groups_header"]!).ToString();
 
-                                        Console.WriteLine("allow : " + allow);
+                                        Console.WriteLine("allow : " + allow + ", hide groups: " + hideGroups);
 
-                                        sw.WriteLine("{0},{1},{2},{3}", i.id, i.name, i.paths[0], allow);
+                                        sw.WriteLine("{0},{1},{2},{3},{4}", i.id, i.name, i.paths[0], allow, hideGroups);
                                     }
                                 }
                             }
@@ -1410,7 +1411,7 @@ namespace exportaAPIS_CloudWso2
         public static void ExportaAppEnConsumersAArchivo(string[] args)
         {
             //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
-            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
+            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqcp.json", optional: true, reloadOnChange: true).Build();
 
             IConfigurationSection config = configRoot.GetSection("MySettings");
             string apiUrl = config.GetSection("urlKongAdmin").Value;
@@ -1471,13 +1472,17 @@ namespace exportaAPIS_CloudWso2
                             {
                                 string appName = (string)iAppCredCons["name"]!;
                                 string clientId = (string)iAppCredCons["client_id"]!;
-                                string clientSecret = (string)iAppCredCons["client_secret"]!;
+                                string clientSecret = "";  //(string)iAppCredCons["client_secret"]!; //
 
                                 Console.WriteLine("{0}\t{1}\t{2}", consumerId, consumerName, appName);
                                 sw.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", consumerId, consumerName, appName, clientId, clientSecret);
                             }
 
                         }
+                    }
+                    else
+                    {
+                        Console.WriteLine(responseCredCons.Result.StatusCode);
                     }
                 }
 
@@ -1944,8 +1949,12 @@ namespace exportaAPIS_CloudWso2
             Console.WriteLine("Fin");
         }
 
-          public static void PluginsACL_Allow_Faltante(string[] args)
+        public static void PluginsACL_Allow_Faltante(string[] args)
         {
+            Console.WriteLine("*******************************************");
+            Console.WriteLine("*        PluginsACL_Allow_Faltante        *");
+            Console.WriteLine("*******************************************");
+
             //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
             IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
 
@@ -1976,7 +1985,7 @@ namespace exportaAPIS_CloudWso2
             string offset = "/plugins";
             do
             {
-                var response = client.GetAsync(pathAdmin + offset ); //+ "?enabled=true"
+                var response = client.GetAsync(pathAdmin + offset); //+ "?enabled=true"
                 response.Wait();
                 Console.WriteLine(response.Result.StatusCode);
                 if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
@@ -1991,40 +2000,63 @@ namespace exportaAPIS_CloudWso2
 
                     foreach (JsonObject i in appData)
                     {
-                        string apiId = (string)i["id"]!;
-                        string apiName = (string)i["name"]!;
-                        string apiInstance = (string)i["instance_name"]!;
+                        string pluginId = (string)i["id"]!;
+                        string pluginName = (string)i["name"]!;
+                        string pluginInstance = (string)i["instance_name"]!;
 
-                        if (apiName == "acl" )
+                        if (pluginName == "acl")
                         {
                             //Console.WriteLine("{0},{1}", apiName, apiInstance);
                             JsonNode configNode = (JsonNode)i["config"]!;
                             JsonArray apiConfigAllow = (JsonArray)configNode["allow"];
-                             if (apiConfigAllow ==null)
+                            string hideGroups = ((bool)configNode["hide_groups_header"]!).ToString();
+
+                            if (pluginInstance == "COBRO-ONLINE-1.0-acl" || pluginInstance == "eSALES-Customer-1.0-acl" || pluginInstance == "eSALES-Customer-2.0-acl")
                             {
-                                string allowName = apiInstance.Substring(0, apiInstance.IndexOf("-"))+ "Role";
-                                //agregar allow fatlante
-                                ((JsonNode)i["config"])["allow"] = new JsonArray(allowName);
+                                apiConfigAllow = null;
+                            }
+                            if (apiConfigAllow == null) // || hideGroups != "True", api workorders debe estar en True
+                            {
+                                if (apiConfigAllow == null)
+                                {
+                                    Console.WriteLine("{0},{1}", pluginName, pluginId);
+                                    string allowName = pluginInstance.Substring(0, pluginInstance.IndexOf("-")) + "Role";
+                                    if (pluginInstance == "COBRO-ONLINE-1.0-acl")
+                                    {
+                                        allowName = "COBRO-ONLINERole";
+                                    }
+                                    if (pluginInstance == "eSALES-Customer-1.0-acl" || pluginInstance == "eSALES-Customer-2.0-acl")
+                                    {
+                                        allowName = "eSALES-CustomerRole";
+                                    }
+                                    //agregar allow fatlante
+                                    ((JsonNode)i["config"])["allow"] = new JsonArray(allowName);
+                                    Console.WriteLine("CREAR ALLOW {0},{1},{2}", pluginId, pluginInstance, allowName); //, i.config.allow[0]
+                                }
+                                /*if (hideGroups != "True")
+                                {
+                                    ((JsonNode)i["config"])["hide_groups_header"] = true;
+                                    hideGroups = ((bool)  ((JsonNode)i["config"])["hide_groups_header"]!).ToString();
+                                    Console.WriteLine("CAMBIAR HIDE GROUPS {0},{1},{2}", apiId, apiInstance, hideGroups); 
+                                }*/
                                 var kongFileObj = JsonSerializer.Serialize(i);
 
                                 var content = new StringContent(kongFileObj, Encoding.UTF8, "application/json");
-                            
-                                var response2 = client.PutAsync(pathAdmin + "plugins/" + apiId, content);
+
+                                var response2 = client.PutAsync(pathAdmin + "plugins/" + pluginId, content);
                                 response2.Wait();
 
                                 //obtener respuesta
                                 if (response2.Result.IsSuccessStatusCode)
                                 {
-                                    Console.WriteLine("actualizada " + apiInstance);
+                                    Console.WriteLine("actualizada " + pluginInstance);
                                 }
-    
-                                Console.WriteLine("CREAR ALLOW {0},{1},{2}", apiId, apiInstance, allowName); //, i.config.allow[0]
                             }
                             else
                             {
                                 foreach (string ic in apiConfigAllow)
                                 {
-                                    Console.WriteLine("ALLOW creado {0},{1},{2}", apiId, apiInstance, ic);
+                                    Console.WriteLine("ALLOW ya creado {0},{1},{2}", pluginId, pluginInstance, ic);
                                 }
                             }
                         }
@@ -2042,6 +2074,313 @@ namespace exportaAPIS_CloudWso2
                 }
             } while (continuar);
 
+            sw.Close();
+
+            Console.WriteLine("Fin");
+        }
+
+        public static void CopiaAclsEntreConsumers(string[] args)
+        {
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
+            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
+
+            IConfigurationSection config = configRoot.GetSection("MySettings");
+            string apiUrl = config.GetSection("urlKongAdmin").Value;
+            string authKong = config.GetSection("authKongAdmin").Value;
+            string rutaDestino = config.GetSection("rutaDestino").Value;
+            string hostKong = config.GetSection("hostKong").Value;
+
+            string pathAdmin = "/api-cli/open-api/consumers/";
+
+            var httpClientHandler = new HttpClientHandler() { };
+            var client = new HttpClient(httpClientHandler);
+            client.BaseAddress = new Uri(apiUrl);
+
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Add("host", hostKong);
+            client.DefaultRequestHeaders.Add("Kong-Admin-Token", authKong);
+
+            string nuevoConsumer = "C_CA_QAM_MIDIRECTV@dtvpan.com";
+
+
+            var response = client.GetAsync(pathAdmin + "?username=C_RG_QA_MIDIRECTV@dtvpan.com");
+            response.Wait();
+            Console.WriteLine(response.Result.StatusCode);
+            string consumerId = "";
+            string consumerName = "";
+            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                var appResCon = response.Result.Content.ReadAsStringAsync();
+                appResCon.Wait();
+
+                JsonNode documentCon = JsonNode.Parse(appResCon.Result)!;
+                JsonNode rootCon = documentCon.Root;
+                JsonArray appDataCon = (JsonArray)rootCon["data"];
+                string appNextCon = (string)rootCon["next"];
+
+                foreach (JsonObject iCon in appDataCon)
+                {
+                    consumerId = (string)iCon["id"]!;
+                    consumerName = (string)iCon["username"]!;
+                    Console.WriteLine("{0}\t{1}", consumerId, consumerName);
+
+                    var responseCredCons = client.GetAsync(pathAdmin + consumerId + "/acls");
+                    responseCredCons.Wait();
+
+                    if (responseCredCons.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        var appResCredCons = responseCredCons.Result.Content.ReadAsStringAsync();
+                        appResCredCons.Wait();
+
+                        JsonNode documentAppCredCons = JsonNode.Parse(appResCredCons.Result)!;
+                        JsonNode rootAppCredCons = documentAppCredCons.Root;
+                        JsonArray appDataAppCredCons = (JsonArray)rootAppCredCons["data"];
+                        string appNextAppCredCons = (string)rootAppCredCons["next"];
+
+                        if (appDataAppCredCons != null)
+                        {
+                            foreach (JsonObject iRole in appDataAppCredCons)
+                            {
+                                string rolId = (string)iRole["id"]!;
+                                string rolName = (string)iRole["group"]!;
+
+                                Console.WriteLine("{0},{1}", rolId, rolName);
+
+                                if (rolName.EndsWith("Role"))
+                                {
+                                    //deshabilitar plugin
+                                    var iNewRole = new JsonObject();
+                                    iNewRole["group"] = rolName ;
+                                    var kongRolObj = JsonSerializer.Serialize(iNewRole);
+
+                                    var content = new StringContent(kongRolObj, Encoding.UTF8, "application/json");
+
+                                    var response2 = client.PostAsync(pathAdmin + nuevoConsumer + "/acls/", content);
+                                    response2.Wait();
+
+                                    //obtener respuesta
+                                    if (response2.Result.IsSuccessStatusCode)
+                                    {
+                                        Console.WriteLine($"rol creado para {nuevoConsumer} : {rolName}");
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine("Fin");
+        }
+
+
+        public static void RevisaRoutesConRegex(string[] args) //revisa rutas de kong que comienzan con ~, si tienen mas de una deja solo 1
+        {
+            Console.WriteLine("*******************************************");
+            Console.WriteLine("*          RevisaRoutesConRegex           *");
+            Console.WriteLine("*******************************************");
+                                
+            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
+
+            IConfigurationSection config = configRoot.GetSection("MySettings");
+            string apiUrl = config.GetSection("urlKongAdmin").Value;
+            string authKong = config.GetSection("authKongAdmin").Value;
+            string rutaDestino = config.GetSection("rutaDestino").Value;
+            string hostKong = config.GetSection("hostKong").Value;
+
+            string pathAdmin = "/api-cli/open-api/";
+
+            var httpClientHandler = new HttpClientHandler() { };
+            var client = new HttpClient(httpClientHandler);
+            client.BaseAddress = new Uri(apiUrl);
+
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Add("Kong-Admin-Token", authKong);
+
+            bool continuar = true;
+            string offset = "/routes";
+            do
+            {
+                var response = client.GetAsync(pathAdmin + offset);
+                response.Wait();
+                Console.WriteLine(response.Result.StatusCode);
+                if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var usrRes = response.Result.Content.ReadAsStringAsync();
+                    usrRes.Wait();
+
+                    JsonNode document = JsonNode.Parse(usrRes.Result)!;
+                    JsonNode root = document.Root;
+                    JsonArray appData = (JsonArray)root["data"];
+                    string appNext = (string)root["next"];
+
+                    foreach (JsonObject i in appData)
+                    {
+                        string apiId = (string)i["id"];
+                        string apiName = (string)i["name"];
+                        JsonArray paths = (JsonArray)i["paths"];
+
+                        bool actualizarRoute = false;
+                        List<string> newPathL = new List<string>();
+
+                        foreach (string path in paths)
+                        {
+                            string mPath = (string)path;
+                            /*if (apiName == "MMSS-ConfigSecrets-1.0")
+                            {
+                                mPath = @"~~~~/API/mmss/configuration/(?<target>\w+)/(?<zone>\w+)/(?<file>\w+)";
+                            }*/
+                            int count = mPath.Count(m => m == '~');
+
+                            if (mPath.StartsWith("~") && count > 1)
+                            {
+                                string newPath = "~/" + mPath.Substring(mPath.IndexOf('/') + 1);
+
+                                newPathL.Add(newPath);
+
+                                actualizarRoute = true;
+                            }
+                            else
+                            {
+                                newPathL.Add(mPath);
+                            }
+                        }
+                        if (actualizarRoute)
+                        {
+                            JsonArray jsonArray = new JsonArray();
+                            foreach (var str in newPathL)
+                            {
+                                jsonArray.Add(JsonValue.Create(str));
+                            }
+
+                            i["paths"] = jsonArray;
+
+                            var kongFileObj = JsonSerializer.Serialize(i);
+
+                            var content = new StringContent(kongFileObj, Encoding.UTF8, "application/json");
+
+                            var response2 = client.PutAsync(pathAdmin + "routes" + "/" + apiId, content);
+                            response2.Wait();
+
+                            //obtener respuesta
+                            if (response2.Result.IsSuccessStatusCode)
+                            {
+                                Console.WriteLine("    actualizada " + apiName);
+                            }
+                        }
+                    }
+
+                    if (string.IsNullOrEmpty(appNext))
+                    {
+                        continuar = false;
+                    }
+                    else
+                    {
+                        offset = appNext;
+                    }
+                }
+            } while (continuar);
+
+            Console.WriteLine("Fin");
+        }
+
+        public static void TokensDeConsumersAArchivo(string[] args)
+        {
+            //IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - prod.json", optional: true, reloadOnChange: true).Build();
+            IConfiguration configRoot = new ConfigurationBuilder().AddJsonFile("appsettings - cloud - dtvqam.json", optional: true, reloadOnChange: true).Build();
+
+            IConfigurationSection config = configRoot.GetSection("MySettings");
+            string apiUrl = config.GetSection("urlKongAdmin").Value;
+            string authKong = config.GetSection("authKongAdmin").Value;
+            string rutaDestino = config.GetSection("rutaDestino").Value;
+            string hostKong = config.GetSection("hostKong").Value;
+            string archivoExport = rutaDestino + "/tokens_credenciales_cuenta.csv";
+
+            string pathAdmin = "/api-cli/open-api/consumers/C_AR_QAM_COBRO_API@dtvpan.com/oauth2"; //credenciales de cuenta
+            string pathAdminOA = "/api-cli/open-api"; //credenciales de cuenta
+
+            var httpClientHandler = new HttpClientHandler() { };
+            var client = new HttpClient(httpClientHandler);
+            client.BaseAddress = new Uri(apiUrl);
+
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Add("host", hostKong);
+            client.DefaultRequestHeaders.Add("Kong-Admin-Token", authKong);
+
+            StreamWriter sw = new StreamWriter(archivoExport);
+
+            var response = client.GetAsync(pathAdmin);
+            response.Wait();
+            Console.WriteLine(response.Result.StatusCode);
+            string credentialId = "";
+            string credentialName = "";
+            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                var appResCon = response.Result.Content.ReadAsStringAsync();
+                appResCon.Wait();
+
+                JsonNode documentCon = JsonNode.Parse(appResCon.Result)!;
+                JsonNode rootCon = documentCon.Root;
+                JsonArray appDataCon = (JsonArray)rootCon["data"];
+                string appNextCon = (string)rootCon["next"];
+
+                foreach (JsonObject iCon in appDataCon)
+                {
+                    credentialId = (string)iCon["id"]!;
+                    credentialName = (string)iCon["name"]!;
+                    Console.WriteLine("{0}\t{1}", credentialId, credentialName);
+
+                    bool continuar = true;
+                    string offset = $"/oauth2_tokens?credential_id={credentialId}";
+                    do
+                    {
+                        var responseCredCons = client.GetAsync($"{pathAdminOA}{offset}");
+                        responseCredCons.Wait();
+
+                        if (responseCredCons.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            var tokenRes = responseCredCons.Result.Content.ReadAsStringAsync();
+                            tokenRes.Wait();
+
+                            JsonNode docTokens = JsonNode.Parse(tokenRes.Result)!;
+                            JsonNode rootTokens = docTokens.Root;
+                            JsonArray dataTokens = (JsonArray)rootTokens["data"];
+                            string appNext = (string)rootTokens["next"];
+
+                            if (dataTokens != null)
+                            {
+                                foreach (JsonObject iTokens in dataTokens)
+                                {
+                                    string accessToken = (string)iTokens["access_token"]!;
+                                    long createdAt = (long)iTokens["created_at"]!;
+                                    DateTimeOffset dtoff = DateTimeOffset.FromUnixTimeSeconds(createdAt) ;
+
+                                    Console.WriteLine($"{credentialId}\t{credentialName}\t{accessToken}\t{createdAt}\t{dtoff.ToString()}");
+                                    sw.WriteLine($"{credentialId}\t{credentialName}\t{accessToken}\t{createdAt}\t{dtoff.ToString()}");
+                                }
+                            }
+
+                            if (string.IsNullOrEmpty(appNext))
+                            {
+                                continuar = false;
+                            }
+                            else
+                            {
+                                offset = appNext;
+                                Console.WriteLine("next : {0}", appNext);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine(responseCredCons.Result.StatusCode);
+                        }
+                    } while (continuar);
+                }
+
+                Console.WriteLine("next : {0}", appNextCon);
+            }
             sw.Close();
 
             Console.WriteLine("Fin");

@@ -1,0 +1,869 @@
+C:\Users\rvenegas\OneDrive - VRIO DIRECTV\Requerimientos Directv\2023 09 14 apis prod\listado-pic.txt
+OK
+ALLOW creado 018bec46-b9dd-4e58-b172-029c08cd956a,ProductOrdering-13.0-acl,ProductOrderingRole
+ALLOW creado 020d4558-ac3c-4f00-a1e7-a218ff7e8cbc,WorkforceManagement-3.0-acl-create-wo-optimus-pe,WorkforceManagementRole
+ALLOW creado 0490f47c-954c-4874-b968-7011593d1ffa,ResourceProvisioning-1.0-acl,ResourceProvisioningRole
+ALLOW creado 0718f44c-6eb4-4210-8fa7-8d0e460288e1,WSSDSNETMobile-1.0-acl,WSSDSNETMobileRole
+ALLOW creado 07e7adb5-e26f-41b0-8f9d-8c45cba84124,PrepayBalanceManagement-5.0-acl,PrepayBalanceManagementRole
+ALLOW creado 08125561-82be-45c5-ac59-14f612bd3972,QuoteManagement-2.0-acl,QuoteManagementRole
+actualizada ServiceProblemManagement-5.0-acl
+actualizada Provisioning-2.0-acl-fi-optimus-r2
+ALLOW creado 0b0914a3-62cc-4997-9236-9e8b81fb80cb,GoBoxDevice-1.0-acl,GoBoxDeviceRole
+ALLOW creado 0b11e6ed-7854-4672-985d-db3519a661fb,Customer360View-4.0-acl,Customer360ViewRole
+ALLOW creado 0c1732b4-be82-4c9e-9dc9-42999c037654,ClaimManagement-2.0-acl,ClaimManagementRole
+ALLOW creado 0d4cbf02-f904-4b2a-8262-b6ab02fabfdd,IdentityManagement-4.0-acl,IdentityManagementRole
+ALLOW creado 0e1fc9a3-4c5a-465f-91b9-188d383a0b1d,QuoteManagement-1.0-acl,QuoteManagementRole
+ALLOW creado 0e6a1702-6a07-44f1-b1e7-5e4a204ff46f,Communication-1.0-acl,CommunicationRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-ar
+ALLOW creado 0f60c790-8154-470a-808b-9ec517d2cf42,ProductOrdering-17.0-acl,ProductOrderingRole
+ALLOW creado 0f6dc027-51e3-4982-955a-7022ece499ee,PaymentManagement-13.0-acl,PaymentManagementRole
+ALLOW creado 10c7d703-93e2-49ee-87db-eb119cc0525a,PaymentManagement-12.0-acl,PaymentManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-pe
+actualizada Provisioning-2.0-acl-fi-optimus-cl
+ALLOW creado 13cb154b-2250-423d-943d-fe8fa23ae2e1,PaymentMethod-4.0-acl,PaymentMethodRole
+ALLOW creado 14d80dcb-7c3c-4bb2-b095-a7e1e9f9b6a1,ActivationConfiguration-6.0-acl-s-optimus-r2,ActivationConfigurationRole
+ALLOW creado 14e33983-33cd-44e5-b76a-8a96b17dca67,PaymentManagement-5.0-acl,PaymentManagementRole
+actualizada Provisioning-2.0-acl-ci-optimus-r2
+ALLOW creado 196be174-245b-4438-b161-1d19aceb9d10,ServiceProblemManagement-1.0-acl,ServiceProblemManagementRole
+ALLOW creado 19b47f66-9e27-4fdc-9071-96de1ff01e70,ShipmentTracking-1.0-acl,ShipmentTrackingRole
+ALLOW creado 1b81d2e6-6b3c-4d9f-800d-8bdd4e206e91,ServiceQualification-6.0-acl,ServiceQualificationRole
+actualizada ServiceProblemManagement-5.0-acl-s711-optimus-cl
+ALLOW creado 1c01e107-261e-492e-95d3-cbef8dd49ccd,ActivationConfiguration-6.0-acl,ActivationConfigurationRole
+actualizada ServiceProblemManagement-4.0-acl-s711-optimus-r2
+ALLOW creado 1c883a17-ac31-492b-9de3-e816aab6b2f3,Customers-1.0-acl,CustomersRole
+actualizada ServiceProblemManagement-5.0-acl-s721-optimus-cl
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-ec
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-uy
+ALLOW creado 21b6adb9-9228-4909-a92d-2c3dc9890fd1,ActivationConfiguration-3.0-acl,ActivationConfigurationRole
+ALLOW creado 236f1b91-907d-41fa-bc64-e13ff8e7caba,CustomerManagement-9.0-acl,CustomerManagementRole
+actualizada SAS-1.0-acl
+acl,2424f460-fdc6-4ba9-8464-9ce85b47b258
+CREAR ALLOW 2424f460-fdc6-4ba9-8464-9ce85b47b258,BillingManagement-2.0-acl,BillingManagementRole
+actualizada BillingManagement-2.0-acl
+acl,24e348b8-8b37-4a14-b38b-9e86df5b93f8
+CREAR ALLOW 24e348b8-8b37-4a14-b38b-9e86df5b93f8,WorkforceManagement-3.0-acl-comp-wo-optimus-pe,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-comp-wo-optimus-pe
+acl,275c345f-be58-41aa-9607-4b313aeaaae4
+CREAR ALLOW 275c345f-be58-41aa-9607-4b313aeaaae4,ProductOfferingQualification-2.0-acl,ProductOfferingQualificationRole
+actualizada ProductOfferingQualification-2.0-acl
+acl,276b5511-710e-4000-b847-cb26dee26d4c
+CREAR ALLOW 276b5511-710e-4000-b847-cb26dee26d4c,ResourceInventoryManagement-5.0-acl-slpr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-cl
+acl,29c8da30-0cbe-41fa-b424-bc6d80083869
+CREAR ALLOW 29c8da30-0cbe-41fa-b424-bc6d80083869,CustomerBillManagement-3.0-acl,CustomerBillManagementRole
+actualizada CustomerBillManagement-3.0-acl
+acl,29d407e6-58a0-43af-8327-5af4fe16a792
+CREAR ALLOW 29d407e6-58a0-43af-8327-5af4fe16a792,DocumentManagement-7.0-acl-cs-optimus-cl,DocumentManagementRole
+actualizada DocumentManagement-7.0-acl-cs-optimus-cl
+acl,2ab2b9a0-7155-44ff-819a-42ef3d337c0b
+CREAR ALLOW 2ab2b9a0-7155-44ff-819a-42ef3d337c0b,Customer360View-5.0-acl,Customer360ViewRole
+actualizada Customer360View-5.0-acl
+acl,2bac28d5-90a1-4522-9087-404b4a9eecaf
+CREAR ALLOW 2bac28d5-90a1-4522-9087-404b4a9eecaf,ResourceInventoryManagement-6.0-acl-prbycr-optimus-ec,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-ec
+acl,2bd753a5-d9ef-46a0-8cf8-04669230981a
+CREAR ALLOW 2bd753a5-d9ef-46a0-8cf8-04669230981a,PaymentManagement-6.0-acl,PaymentManagementRole
+actualizada PaymentManagement-6.0-acl
+acl,2c0df4cb-1a09-423f-8177-9f4a26f371e0
+CREAR ALLOW 2c0df4cb-1a09-423f-8177-9f4a26f371e0,ServiceProblemManagement-3.0-acl-s711-optimus-r2,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s711-optimus-r2
+acl,2cba9c8c-3917-46e1-b87f-431dcb197406
+CREAR ALLOW 2cba9c8c-3917-46e1-b87f-431dcb197406,AccountManagement-5.0-acl,AccountManagementRole
+actualizada AccountManagement-5.0-acl
+acl,2e05228f-b993-40b6-aad2-8de2c29c1d26
+CREAR ALLOW 2e05228f-b993-40b6-aad2-8de2c29c1d26,IdentityManagement-2.0-acl,IdentityManagementRole
+actualizada IdentityManagement-2.0-acl
+acl,2ef41ecd-b4d1-4067-a185-434f0d374721
+CREAR ALLOW 2ef41ecd-b4d1-4067-a185-434f0d374721,CustomerManagement-13.0-acl-cbycr-optimus-cl,CustomerManagementRole
+actualizada CustomerManagement-13.0-acl-cbycr-optimus-cl
+acl,2f156e27-56b3-43d8-913c-e891ef571c75
+CREAR ALLOW 2f156e27-56b3-43d8-913c-e891ef571c75,AccountManagement-2.0-acl,AccountManagementRole
+actualizada AccountManagement-2.0-acl
+acl,300a85f1-4ad8-47f3-a30f-dd80c17e9a92
+CREAR ALLOW 300a85f1-4ad8-47f3-a30f-dd80c17e9a92,PaymentManagement-11.0-acl,PaymentManagementRole
+actualizada PaymentManagement-11.0-acl
+acl,31682579-1bb3-45f0-bedb-4bfd1c383bf7
+CREAR ALLOW 31682579-1bb3-45f0-bedb-4bfd1c383bf7,Promotion-1.0-acl,PromotionRole
+actualizada Promotion-1.0-acl
+acl,3206511c-acd4-40fc-877c-093b071ed9cd
+CREAR ALLOW 3206511c-acd4-40fc-877c-093b071ed9cd,ProductOrdering-4.0-acl,ProductOrderingRole
+actualizada ProductOrdering-4.0-acl
+acl,332b11ce-9a77-4903-a97d-4b14e88abd50
+CREAR ALLOW 332b11ce-9a77-4903-a97d-4b14e88abd50,ProductOrdering-7.0-acl,ProductOrderingRole
+actualizada ProductOrdering-7.0-acl
+acl,3527722a-b15c-488e-9932-66cc76f242d5
+CREAR ALLOW 3527722a-b15c-488e-9932-66cc76f242d5,UsageConsumptionManagement-1.0-acl,UsageConsumptionManagementRole
+actualizada UsageConsumptionManagement-1.0-acl
+acl,35c55aa1-ea17-41fe-b30f-66a5d31695f8
+CREAR ALLOW 35c55aa1-ea17-41fe-b30f-66a5d31695f8,ServiceQualityManagement-2.0-acl,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl
+acl,3702f084-64d7-4f1b-8cc6-6c2ba3dccfd4
+CREAR ALLOW 3702f084-64d7-4f1b-8cc6-6c2ba3dccfd4,AccountManagement-1.0-acl,AccountManagementRole
+actualizada AccountManagement-1.0-acl
+acl,3727a17a-41ba-432f-894b-458c9e116e11
+CREAR ALLOW 3727a17a-41ba-432f-894b-458c9e116e11,CustomerManagement-5.0-acl,CustomerManagementRole
+actualizada CustomerManagement-5.0-acl
+acl,39cee114-1b18-4493-af49-1486e0469cf5
+CREAR ALLOW 39cee114-1b18-4493-af49-1486e0469cf5,CustomerManagement-15.0-acl,CustomerManagementRole
+actualizada CustomerManagement-15.0-acl
+acl,3acd3e1b-fb13-4779-b6a0-55418f6eca9a
+CREAR ALLOW 3acd3e1b-fb13-4779-b6a0-55418f6eca9a,ProductOrdering-16.0-acl,ProductOrderingRole
+actualizada ProductOrdering-16.0-acl
+acl,3ba2f387-2b13-4c88-b629-928c2a2b4af9
+CREAR ALLOW 3ba2f387-2b13-4c88-b629-928c2a2b4af9,CustomerManagement-10.0-acl,CustomerManagementRole
+actualizada CustomerManagement-10.0-acl
+acl,3c5328c8-98ab-41ef-b0b9-42e6cc601376
+CREAR ALLOW 3c5328c8-98ab-41ef-b0b9-42e6cc601376,OnBoardingManagement-1.0-acl,OnBoardingManagementRole
+actualizada OnBoardingManagement-1.0-acl
+acl,3da51f59-ca62-4324-a8df-cf521a41b0af
+CREAR ALLOW 3da51f59-ca62-4324-a8df-cf521a41b0af,OnBoardingManagement-2.0-acl,OnBoardingManagementRole
+actualizada OnBoardingManagement-2.0-acl
+acl,3dc69138-0684-4fc9-b259-9557e44193fa
+CREAR ALLOW 3dc69138-0684-4fc9-b259-9557e44193fa,IdentityManagement-5.0-acl,IdentityManagementRole
+actualizada IdentityManagement-5.0-acl
+acl,3e33fe50-cdbd-453c-aaeb-dd45a8354145
+CREAR ALLOW 3e33fe50-cdbd-453c-aaeb-dd45a8354145,ResourceOrdering-4.0-acl,ResourceOrderingRole
+actualizada ResourceOrdering-4.0-acl
+acl,3e95d7e7-7c45-448d-a0af-1354336c5b47
+CREAR ALLOW 3e95d7e7-7c45-448d-a0af-1354336c5b47,ServiceProblemManagement-3.0-acl-s721-optimus-cl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-cl
+acl,41b2a983-92e9-406a-bafd-dd8a37b1201b
+CREAR ALLOW 41b2a983-92e9-406a-bafd-dd8a37b1201b,DocumentManagement-3.0-acl,DocumentManagementRole
+actualizada DocumentManagement-3.0-acl
+acl,42401ae9-ba7d-4cd2-bca8-d90f26605ff5
+CREAR ALLOW 42401ae9-ba7d-4cd2-bca8-d90f26605ff5,AuthorizationManagement-1.0-acl-merlin-R3,AuthorizationManagementRole
+actualizada AuthorizationManagement-1.0-acl-merlin-R3
+acl,42d00796-fe17-449f-9dcc-215453bb3d31
+CREAR ALLOW 42d00796-fe17-449f-9dcc-215453bb3d31,ServiceProblemManagement-3.0-acl-s721-optimus-pe,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-pe
+acl,438a2367-5193-43e1-936c-5d43d79dafec
+CREAR ALLOW 438a2367-5193-43e1-936c-5d43d79dafec,ServiceQualityManagement-2.0-acl-a4sl-optimus-r2,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl-a4sl-optimus-r2
+acl,46301c5f-a0e9-42d9-aec8-a1f716c16cab
+CREAR ALLOW 46301c5f-a0e9-42d9-aec8-a1f716c16cab,ProductInventoryManagement-3.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-3.0-acl
+acl,472094d6-a16d-4206-9232-c814cd02926d
+CREAR ALLOW 472094d6-a16d-4206-9232-c814cd02926d,Appointment-1.0-acl,AppointmentRole
+actualizada Appointment-1.0-acl
+acl,472b28f5-bee9-481e-876d-c3b189954cd6
+CREAR ALLOW 472b28f5-bee9-481e-876d-c3b189954cd6,CustomerManagement-7.0-acl,CustomerManagementRole
+actualizada CustomerManagement-7.0-acl
+acl,47926675-54c2-4167-b706-7b36f4d3d979
+CREAR ALLOW 47926675-54c2-4167-b706-7b36f4d3d979,ServiceProblemManagement-5.0-acl-s721-optimus-pe,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-5.0-acl-s721-optimus-pe
+acl,47b28d78-f7bd-497f-9cef-8381be886afc
+CREAR ALLOW 47b28d78-f7bd-497f-9cef-8381be886afc,ResourceInventoryManagement-5.0-acl-spr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-cl
+acl,47f2a819-2401-492c-a2cf-bcf366dffc6d
+CREAR ALLOW 47f2a819-2401-492c-a2cf-bcf366dffc6d,ProductInventoryManagement-5.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-5.0-acl
+acl,4883f64e-b990-41e6-8b11-5509f20bdb1c
+CREAR ALLOW 4883f64e-b990-41e6-8b11-5509f20bdb1c,Location-5.0-acl,LocationRole
+actualizada Location-5.0-acl
+acl,4a05cc9c-7e8b-4d61-b5d8-a002d2aee176
+CREAR ALLOW 4a05cc9c-7e8b-4d61-b5d8-a002d2aee176,EnvironmentStatus-acl,EnvironmentStatusRole
+actualizada EnvironmentStatus-acl
+acl,4aa6ab92-a3e4-4842-a919-1c903dba8617
+CREAR ALLOW 4aa6ab92-a3e4-4842-a919-1c903dba8617,ServiceQualification-3.0-acl,ServiceQualificationRole
+actualizada ServiceQualification-3.0-acl
+acl,4b76cecf-f852-4e37-a410-ab61d4a8faeb
+CREAR ALLOW 4b76cecf-f852-4e37-a410-ab61d4a8faeb,OCC_SAS-1.0-acl,OCC_SASRole
+actualizada OCC_SAS-1.0-acl
+acl,4becd894-b753-4520-ad9e-3b34a3145ee1
+CREAR ALLOW 4becd894-b753-4520-ad9e-3b34a3145ee1,ResourceInventoryManagement-5.0-acl-slpr-optimus-co,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-co
+acl,4c5742f7-a149-455f-b04d-4672859a829f
+CREAR ALLOW 4c5742f7-a149-455f-b04d-4672859a829f,WorkforceManagement-3.0-acl-comp-wo-optimus-co,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-comp-wo-optimus-co
+acl,4da4d6bb-4aab-4517-84d6-0c65d62d4039
+CREAR ALLOW 4da4d6bb-4aab-4517-84d6-0c65d62d4039,ElegibleProductOffering-7.0-acl,ElegibleProductOfferingRole
+actualizada ElegibleProductOffering-7.0-acl
+acl,4f4306b6-2fd1-4f8b-9ccd-960e9167f245
+CREAR ALLOW 4f4306b6-2fd1-4f8b-9ccd-960e9167f245,ServiceQualification-5.0-acl,ServiceQualificationRole
+actualizada ServiceQualification-5.0-acl
+acl,50c31dd9-6ad1-4f08-87cf-d103d933c74d
+CREAR ALLOW 50c31dd9-6ad1-4f08-87cf-d103d933c74d,Promotion-3.0-acl,PromotionRole
+actualizada Promotion-3.0-acl
+acl,518ae3e0-93ea-43be-8108-10a5716a09c9
+CREAR ALLOW 518ae3e0-93ea-43be-8108-10a5716a09c9,PaymentMethod-3.0-acl,PaymentMethodRole
+actualizada PaymentMethod-3.0-acl
+acl,52d85804-8b09-4401-a115-f17f9dccb226
+CREAR ALLOW 52d85804-8b09-4401-a115-f17f9dccb226,Location-5.0-acl-geo-reverse-r1,LocationRole
+actualizada Location-5.0-acl-geo-reverse-r1
+acl,5340aaec-bcf5-4191-85f0-5f1161ab5274
+CREAR ALLOW 5340aaec-bcf5-4191-85f0-5f1161ab5274,ProductInventoryManagement-6.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-6.0-acl
+acl,54610830-12ee-4bb9-aeab-ef255600ee6e
+CREAR ALLOW 54610830-12ee-4bb9-aeab-ef255600ee6e,CustomerManagement-12.0-acl-cbycr-optimus-cl,CustomerManagementRole
+actualizada CustomerManagement-12.0-acl-cbycr-optimus-cl
+acl,56e03480-8afa-47d4-a8e6-e649e5a9197d
+CREAR ALLOW 56e03480-8afa-47d4-a8e6-e649e5a9197d,PaymentEngine-1.0-acl,PaymentEngineRole
+actualizada PaymentEngine-1.0-acl
+acl,57e8036e-b10b-4c86-9f37-81fdaed79dbb
+CREAR ALLOW 57e8036e-b10b-4c86-9f37-81fdaed79dbb,PrepayBalanceManagement-2.0-acl,PrepayBalanceManagementRole
+actualizada PrepayBalanceManagement-2.0-acl
+acl,57ead3b0-6ffc-48e1-a509-53e8ee5ae984
+CREAR ALLOW 57ead3b0-6ffc-48e1-a509-53e8ee5ae984,Provisioning-2.0-acl-qn-optimus-cl,ProvisioningRole
+actualizada Provisioning-2.0-acl-qn-optimus-cl
+acl,58dfbed5-ad67-428f-b41a-191161d32cb5
+CREAR ALLOW 58dfbed5-ad67-428f-b41a-191161d32cb5,WorkforceManagement-3.0-acl-comp-wo-optimus-UY,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-comp-wo-optimus-UY
+acl,58fd8d5d-5075-4c3a-bfd4-a9c356a51555
+CREAR ALLOW 58fd8d5d-5075-4c3a-bfd4-a9c356a51555,BillingManagement-5.0-acl,BillingManagementRole
+actualizada BillingManagement-5.0-acl
+app.next /plugins?offset=WyI1OGZkOGQ1ZC01MDc1LTRjM2EtYmZkNC1hOWMzNTZhNTE1NTUiXQ
+OK
+acl,5ada9950-ec21-4195-9b85-4d56d4e45973
+CREAR ALLOW 5ada9950-ec21-4195-9b85-4d56d4e45973,Provisioning-2.0-acl-ap-optimus-cl,ProvisioningRole
+actualizada Provisioning-2.0-acl-ap-optimus-cl
+acl,5b430ae6-0cd4-4763-8def-61fcf4252067
+CREAR ALLOW 5b430ae6-0cd4-4763-8def-61fcf4252067,ValidateBackOffice-1.0-acl,ValidateBackOfficeRole
+actualizada ValidateBackOffice-1.0-acl
+acl,5b72145f-bcd6-4ef3-814f-5da1e68a08af
+CREAR ALLOW 5b72145f-bcd6-4ef3-814f-5da1e68a08af,ResourceInventoryManagement-6.0-acl-prbycust-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-pe
+acl,5bae8e1f-79a8-45ac-8575-351b297bbc1f
+CREAR ALLOW 5bae8e1f-79a8-45ac-8575-351b297bbc1f,ResourceInventoryManagement-5.0-acl-slpr-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-uy
+acl,5cf4c5ee-f2f3-4764-a520-f2f94cd1d036
+CREAR ALLOW 5cf4c5ee-f2f3-4764-a520-f2f94cd1d036,ResourceInventoryManagement-5.0-acl-spr-optimus-ec,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-ec
+acl,5e05513c-6116-4223-9d4d-d3f06f2644fc
+CREAR ALLOW 5e05513c-6116-4223-9d4d-d3f06f2644fc,ResourceInventoryManagement-5.0-acl-spr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-r2
+acl,5fe1871b-c0c1-43c4-99b4-af68c674b6d8
+CREAR ALLOW 5fe1871b-c0c1-43c4-99b4-af68c674b6d8,CustomerManagement-4.0-acl,CustomerManagementRole
+actualizada CustomerManagement-4.0-acl
+acl,60a1d074-7c48-46de-ad20-b917aefc8a6e
+CREAR ALLOW 60a1d074-7c48-46de-ad20-b917aefc8a6e,DocumentManagement-6.0-acl,DocumentManagementRole
+actualizada DocumentManagement-6.0-acl
+acl,611fbcbe-f3fc-4024-9683-62aecd6be0a1
+CREAR ALLOW 611fbcbe-f3fc-4024-9683-62aecd6be0a1,WorkforceManagement-3.0-acl-create-wo-optimus-ec,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-create-wo-optimus-ec
+acl,61d640e0-e293-413d-9750-3dd87abc3fd5
+CREAR ALLOW 61d640e0-e293-413d-9750-3dd87abc3fd5,ServiceProblemManagement-4.0-acl-s711-optimus-pe,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl-s711-optimus-pe
+acl,61f97ad9-ea5b-4f1f-8c06-47d145c5c750
+CREAR ALLOW 61f97ad9-ea5b-4f1f-8c06-47d145c5c750,Location-5.0-acl-geo-reverse-r2,LocationRole
+actualizada Location-5.0-acl-geo-reverse-r2
+acl,62021e95-fb44-49b9-96f8-57189399579d
+CREAR ALLOW 62021e95-fb44-49b9-96f8-57189399579d,ServiceQualityManagement-2.0-acl-a4sl-optimus-cl,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl-a4sl-optimus-cl
+acl,634503ea-34fd-4843-b750-c79eed4d32aa
+CREAR ALLOW 634503ea-34fd-4843-b750-c79eed4d32aa,ProductInventoryManagement-7.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-7.0-acl
+acl,63e3d4dd-0795-461c-a567-779cf8ba9549
+CREAR ALLOW 63e3d4dd-0795-461c-a567-779cf8ba9549,ResourceInventoryManagement-6.0-acl-spr-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-spr-optimus-uy
+acl,6406a3a9-4bc0-46b6-a470-fcd532ef8239
+CREAR ALLOW 6406a3a9-4bc0-46b6-a470-fcd532ef8239,ServiceProblemManagement-3.0-acl-s764-optimus-co,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s764-optimus-co
+acl,64cc2e84-e88b-4600-ae56-ced4a8288f72
+CREAR ALLOW 64cc2e84-e88b-4600-ae56-ced4a8288f72,CustomerManagement-15.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-15.0-acl-cbycr-optimus-r2
+acl,6520bf76-3275-47a4-9b81-6c913cbe767c
+CREAR ALLOW 6520bf76-3275-47a4-9b81-6c913cbe767c,TestMicrogatewayAnalitics-1.0-acl,TestMicrogatewayAnaliticsRole
+actualizada TestMicrogatewayAnalitics-1.0-acl
+acl,65f73283-c317-4e7f-a4e6-fcf1d55aad09
+CREAR ALLOW 65f73283-c317-4e7f-a4e6-fcf1d55aad09,CustomerBillManagement-2.0-acl,CustomerBillManagementRole
+actualizada CustomerBillManagement-2.0-acl
+acl,66479101-95e9-46ec-a67b-e11909e1c106
+CREAR ALLOW 66479101-95e9-46ec-a67b-e11909e1c106,Provisioning-1.0-acl-upos-optimus-r2,ProvisioningRole
+actualizada Provisioning-1.0-acl-upos-optimus-r2
+acl,66e60927-60cd-4338-95c8-5d82e4e6ef12
+CREAR ALLOW 66e60927-60cd-4338-95c8-5d82e4e6ef12,CustomerBillManagement-4.0-acl,CustomerBillManagementRole
+actualizada CustomerBillManagement-4.0-acl
+acl,6708b42a-b52c-4c63-8faa-0a7a6eca6220
+CREAR ALLOW 6708b42a-b52c-4c63-8faa-0a7a6eca6220,ResourceInventoryManagement-6.0-acl-prbycust-optimus-R1,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-R1
+acl,677007bd-b48e-4b03-8edc-d6737af6933b
+CREAR ALLOW 677007bd-b48e-4b03-8edc-d6737af6933b,ServiceProblemManagement-3.0-acl-s711-optimus-ec,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s711-optimus-ec
+acl,68671db6-d91e-46d7-ae04-65aa04c3aebe
+CREAR ALLOW 68671db6-d91e-46d7-ae04-65aa04c3aebe,WSSDSNETMobile-3.0-acl,WSSDSNETMobileRole
+actualizada WSSDSNETMobile-3.0-acl
+acl,68fd3cb0-e458-4a02-9efd-f41553a3aa21
+CREAR ALLOW 68fd3cb0-e458-4a02-9efd-f41553a3aa21,ResourceInventoryManagement-6.0-acl-prbycr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-cl
+acl,6941cd47-dca2-4c7c-be39-20878ad57b4c
+CREAR ALLOW 6941cd47-dca2-4c7c-be39-20878ad57b4c,ResourceInventoryManagement-6.0-acl-prbycust-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-uy
+acl,6bacd0b2-13c9-41b9-8cf2-e89f2885176c
+CREAR ALLOW 6bacd0b2-13c9-41b9-8cf2-e89f2885176c,Azimut_SelfService-1.0-acl,Azimut_SelfServiceRole
+actualizada Azimut_SelfService-1.0-acl
+acl,6c20aebf-8ecd-4632-b06f-651b2ef842cb
+CREAR ALLOW 6c20aebf-8ecd-4632-b06f-651b2ef842cb,ResourceInventoryManagement-6.0-acl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl
+acl,6c6b003f-7dfa-4690-b420-69e6b8da0e2d
+CREAR ALLOW 6c6b003f-7dfa-4690-b420-69e6b8da0e2d,Address-3.0-acl,AddressRole
+actualizada Address-3.0-acl
+acl,6c6ba966-8b85-4617-9ad8-43b6f39c2220
+CREAR ALLOW 6c6ba966-8b85-4617-9ad8-43b6f39c2220,SalesManagement-1.0-acl,SalesManagementRole
+actualizada SalesManagement-1.0-acl
+acl,6d095f62-b349-4e81-be05-db92cb592006
+CREAR ALLOW 6d095f62-b349-4e81-be05-db92cb592006,PredictiveTransaction-2.0-acl,PredictiveTransactionRole
+actualizada PredictiveTransaction-2.0-acl
+acl,6d6a7040-1724-41df-aebe-bc245cb9ffbc
+CREAR ALLOW 6d6a7040-1724-41df-aebe-bc245cb9ffbc,ResourceInventoryManagement-6.0-acl-spr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-spr-optimus-r2
+acl,6dbdb689-76c3-4dfd-86a9-f81a79b9d44d
+CREAR ALLOW 6dbdb689-76c3-4dfd-86a9-f81a79b9d44d,CustomerManagement-6.0-acl,CustomerManagementRole
+actualizada CustomerManagement-6.0-acl
+acl,6ec3fe02-bfa7-491e-9a7a-e006b35540d9
+CREAR ALLOW 6ec3fe02-bfa7-491e-9a7a-e006b35540d9,Communication-2.0-acl,CommunicationRole
+actualizada Communication-2.0-acl
+acl,6f1858b9-afb1-419a-a476-26d77d37bad2
+CREAR ALLOW 6f1858b9-afb1-419a-a476-26d77d37bad2,ResourceOrdering-6.0-acl-upor-optimus-r2,ResourceOrderingRole
+actualizada ResourceOrdering-6.0-acl-upor-optimus-r2
+acl,70ac8af9-f5f9-4bf4-a817-cf187527b471
+CREAR ALLOW 70ac8af9-f5f9-4bf4-a817-cf187527b471,ActivationConfiguration-1.0-acl,ActivationConfigurationRole
+actualizada ActivationConfiguration-1.0-acl
+acl,711fb7dc-5fa9-4eeb-8369-0cc7a32c0444
+CREAR ALLOW 711fb7dc-5fa9-4eeb-8369-0cc7a32c0444,ResourceOrdering-3.0-acl,ResourceOrderingRole
+actualizada ResourceOrdering-3.0-acl
+acl,7179f77f-cde8-4c5c-b8ff-d814add9f6af
+CREAR ALLOW 7179f77f-cde8-4c5c-b8ff-d814add9f6af,CustomerStatusAndProductCategory-3.0-acl,CustomerStatusAndProductCategoryRole
+actualizada CustomerStatusAndProductCategory-3.0-acl
+acl,718ed786-978e-4b3a-b504-5357739ad7b6
+CREAR ALLOW 718ed786-978e-4b3a-b504-5357739ad7b6,ServiceProblemManagement-3.0-acl-s711-optimus-cl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s711-optimus-cl
+acl,7217290e-ec19-4387-8d7d-84579b67ccb1
+CREAR ALLOW 7217290e-ec19-4387-8d7d-84579b67ccb1,ResourceInventoryManagement-6.0-acl-prbycr-optimus-co,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-co
+acl,73a763a5-8904-47e1-bbad-cb2481292702
+CREAR ALLOW 73a763a5-8904-47e1-bbad-cb2481292702,CustomerManagement-10.0-acl-cbycr-optimus-pe,CustomerManagementRole
+actualizada CustomerManagement-10.0-acl-cbycr-optimus-pe
+acl,7459f098-ee2d-4a8c-a1aa-ba456d9d4d12
+CREAR ALLOW 7459f098-ee2d-4a8c-a1aa-ba456d9d4d12,ProductOrdering-5.0-acl,ProductOrderingRole
+actualizada ProductOrdering-5.0-acl
+acl,76215798-0b4c-473e-a131-b7de9bfd395f
+CREAR ALLOW 76215798-0b4c-473e-a131-b7de9bfd395f,WorkforceManagement-3.0-acl-getwobycust-optimus-co,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-co
+acl,7659bb1e-a4bc-40ee-9a42-9e6765e53845
+CREAR ALLOW 7659bb1e-a4bc-40ee-9a42-9e6765e53845,WorkforceManagement-1.0-acl,WorkforceManagementRole
+actualizada WorkforceManagement-1.0-acl
+acl,77a3b424-6f25-4f95-a77e-449af4e938e6
+CREAR ALLOW 77a3b424-6f25-4f95-a77e-449af4e938e6,AuthorizationManagement-1.0-acl-merlin-R2,AuthorizationManagementRole
+actualizada AuthorizationManagement-1.0-acl-merlin-R2
+acl,77aa4c3f-bcf1-4df4-b2ec-fb0ddd4c631a
+CREAR ALLOW 77aa4c3f-bcf1-4df4-b2ec-fb0ddd4c631a,DisneyPlus-1.0-acl,DisneyPlusRole
+actualizada DisneyPlus-1.0-acl
+acl,7a1b5115-727f-45a7-a959-61b6109d4b21
+CREAR ALLOW 7a1b5115-727f-45a7-a959-61b6109d4b21,ClaimManagement-1.0-acl,ClaimManagementRole
+actualizada ClaimManagement-1.0-acl
+acl,7a92ed11-54ee-4344-a46e-77f1a063c291
+CREAR ALLOW 7a92ed11-54ee-4344-a46e-77f1a063c291,PaymentMethod-6.0-acl,PaymentMethodRole
+actualizada PaymentMethod-6.0-acl
+acl,7e1c63f7-086e-4626-ac59-b15a88a09fb1
+CREAR ALLOW 7e1c63f7-086e-4626-ac59-b15a88a09fb1,ResourceInventoryManagement-6.0-acl-upr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-r2
+acl,7e87f221-6fd8-4c5e-8108-64fc861d86b2
+CREAR ALLOW 7e87f221-6fd8-4c5e-8108-64fc861d86b2,ServiceQualification-7.0-acl,ServiceQualificationRole
+actualizada ServiceQualification-7.0-acl
+acl,80ee413c-309b-4575-8678-432a61dbacdd
+CREAR ALLOW 80ee413c-309b-4575-8678-432a61dbacdd,PaymentManagement-14.0-acl,PaymentManagementRole
+actualizada PaymentManagement-14.0-acl
+acl,8135dadc-9130-448c-9098-dc8cfdee949b
+CREAR ALLOW 8135dadc-9130-448c-9098-dc8cfdee949b,CustomerManagement-8.0-acl,CustomerManagementRole
+actualizada CustomerManagement-8.0-acl
+acl,8234c95a-6780-4655-bce5-f1f3f58327eb
+CREAR ALLOW 8234c95a-6780-4655-bce5-f1f3f58327eb,ResourceInventoryManagement-3.0-acl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-3.0-acl
+acl,82c9bf30-1d24-4eb0-b2ad-802d87b4fd69
+CREAR ALLOW 82c9bf30-1d24-4eb0-b2ad-802d87b4fd69,Appointment-3.0-acl,AppointmentRole
+actualizada Appointment-3.0-acl
+acl,83655f8f-bec9-4916-a877-7ecef7b22199
+CREAR ALLOW 83655f8f-bec9-4916-a877-7ecef7b22199,ServiceProblemManagement-2.0-acl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-2.0-acl
+acl,840142c2-14f2-45ba-8122-09f30a5bbe9e
+CREAR ALLOW 840142c2-14f2-45ba-8122-09f30a5bbe9e,ResourceInventoryManagement-6.0-acl-spr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-spr-optimus-cl
+acl,8452f811-602b-44d0-b3f2-0e7e7d65a815
+CREAR ALLOW 8452f811-602b-44d0-b3f2-0e7e7d65a815,ResourceOrdering-5.0-acl,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl
+acl,84d81f11-a14f-4744-a81d-37f3d4fb8772
+CREAR ALLOW 84d81f11-a14f-4744-a81d-37f3d4fb8772,ResourceInventoryManagement-6.0-acl-prbycr-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-pe
+acl,851f67fb-cec2-4464-914e-b4eace83e27e
+CREAR ALLOW 851f67fb-cec2-4464-914e-b4eace83e27e,ProductOrdering-8.0-acl,ProductOrderingRole
+actualizada ProductOrdering-8.0-acl
+acl,853817a4-7485-4f68-9d1c-3e6858c1b84d
+CREAR ALLOW 853817a4-7485-4f68-9d1c-3e6858c1b84d,PartyManagement-1.0-acl,PartyManagementRole
+actualizada PartyManagement-1.0-acl
+acl,85984d60-33b0-4e3e-80cb-29c6b5ef4ef7
+CREAR ALLOW 85984d60-33b0-4e3e-80cb-29c6b5ef4ef7,ActivationConfiguration-6.0-acl-s-optimus-ec,ActivationConfigurationRole
+actualizada ActivationConfiguration-6.0-acl-s-optimus-ec
+acl,88a0d9ed-691c-4584-aabb-b65310f75f4d
+CREAR ALLOW 88a0d9ed-691c-4584-aabb-b65310f75f4d,ProductOrdering-11.0-acl,ProductOrderingRole
+actualizada ProductOrdering-11.0-acl
+acl,89d5d32c-0322-442a-bbc4-d87156650680
+CREAR ALLOW 89d5d32c-0322-442a-bbc4-d87156650680,ResourceInventoryManagement-6.0-acl-spr-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-spr-optimus-pe
+acl,89d79b50-6dc7-402c-9c96-655c3462501a
+CREAR ALLOW 89d79b50-6dc7-402c-9c96-655c3462501a,ServiceProblemManagement-5.0-acl-s711-optimus-pe,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-5.0-acl-s711-optimus-pe
+acl,89eaabd3-ba6a-454f-880d-53c928a8710f
+CREAR ALLOW 89eaabd3-ba6a-454f-880d-53c928a8710f,SurveyManagement-1.0-acl,SurveyManagementRole
+actualizada SurveyManagement-1.0-acl
+acl,8a6ed39b-8ffb-44f9-b5c1-723873c038fc
+CREAR ALLOW 8a6ed39b-8ffb-44f9-b5c1-723873c038fc,ResourceInventoryManagement-6.0-acl-upr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-cl
+acl,8b70cf69-074e-42e5-8b52-7c6762cf920f
+CREAR ALLOW 8b70cf69-074e-42e5-8b52-7c6762cf920f,BillingManagement-1.0-acl,BillingManagementRole
+actualizada BillingManagement-1.0-acl
+acl,8bbe7612-389b-4c54-ad89-c42d6561c06f
+CREAR ALLOW 8bbe7612-389b-4c54-ad89-c42d6561c06f,ResourceInventoryManagement-1.0-acl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-1.0-acl
+acl,8c1ce225-835c-4727-9854-240499fd6ba0
+CREAR ALLOW 8c1ce225-835c-4727-9854-240499fd6ba0,AgreementManagement-2.0-acl,AgreementManagementRole
+actualizada AgreementManagement-2.0-acl
+acl,8d26eaa9-a68c-4a2d-9068-f75bcb1d04c2
+CREAR ALLOW 8d26eaa9-a68c-4a2d-9068-f75bcb1d04c2,ServiceQualification-4.0-acl,ServiceQualificationRole
+actualizada ServiceQualification-4.0-acl
+acl,8d68ed6b-db20-4115-a9ea-7e40fa542729
+CREAR ALLOW 8d68ed6b-db20-4115-a9ea-7e40fa542729,NotificationManagement-1.0-acl,NotificationManagementRole
+actualizada NotificationManagement-1.0-acl
+acl,8dc2b972-ca84-4156-b6c0-0e22cd1751bc
+CREAR ALLOW 8dc2b972-ca84-4156-b6c0-0e22cd1751bc,WorkforceManagement-3.0-acl-getwobycust-optimus-ar,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-ar
+acl,8f4ed6bd-4481-44c7-80b4-94c873c365d5
+CREAR ALLOW 8f4ed6bd-4481-44c7-80b4-94c873c365d5,ResourceInventoryManagement-6.0-acl-slpr-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-slpr-optimus-pe
+acl,903a40c1-df00-4d6a-a676-47d6a5cbf45f
+CREAR ALLOW 903a40c1-df00-4d6a-a676-47d6a5cbf45f,Provisioning-1.0-acl-fi-optimus-cl,ProvisioningRole
+actualizada Provisioning-1.0-acl-fi-optimus-cl
+acl,917a9687-172c-4422-8bbf-f125f1a84e1e
+CREAR ALLOW 917a9687-172c-4422-8bbf-f125f1a84e1e,PaymentMethod-5.0-acl,PaymentMethodRole
+actualizada PaymentMethod-5.0-acl
+acl,92ebcce3-bac5-492f-97a0-2c02c4919dd2
+CREAR ALLOW 92ebcce3-bac5-492f-97a0-2c02c4919dd2,WorkforceManagement-2.0-acl,WorkforceManagementRole
+actualizada WorkforceManagement-2.0-acl
+acl,939de6fb-c10a-4bef-a10f-4f50e49c1b9a
+CREAR ALLOW 939de6fb-c10a-4bef-a10f-4f50e49c1b9a,BillingManagement-4.0-acl,BillingManagementRole
+actualizada BillingManagement-4.0-acl
+acl,94090012-0f29-4684-a147-b908a895e3de
+CREAR ALLOW 94090012-0f29-4684-a147-b908a895e3de,EventManagement-1.0-acl,EventManagementRole
+actualizada EventManagement-1.0-acl
+acl,94f016af-57b1-4b66-8c27-b56a4ced40ed
+CREAR ALLOW 94f016af-57b1-4b66-8c27-b56a4ced40ed,DocumentManagement-7.0-acl,DocumentManagementRole
+actualizada DocumentManagement-7.0-acl
+acl,9505536c-e68a-4d79-a6e7-f294d0f9b9ac
+CREAR ALLOW 9505536c-e68a-4d79-a6e7-f294d0f9b9ac,ActivationConfiguration-6.0-acl-s-optimus-pe,ActivationConfigurationRole
+actualizada ActivationConfiguration-6.0-acl-s-optimus-pe
+acl,951de641-5adf-4bf9-b05f-efef2b3239e6
+CREAR ALLOW 951de641-5adf-4bf9-b05f-efef2b3239e6,ResourceInventoryManagement-6.0-acl-upr-optimus-ec,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-ec
+acl,9533e3cd-54ac-44b4-802a-41f7a1988dc3
+CREAR ALLOW 9533e3cd-54ac-44b4-802a-41f7a1988dc3,ResourceOrdering-5.0-acl-cpor-optimus-r2,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl-cpor-optimus-r2
+acl,960b08b8-4c1d-4288-8940-4545618762f3
+CREAR ALLOW 960b08b8-4c1d-4288-8940-4545618762f3,CustomerManagement-17.0-acl-cbycr-optimus-pe,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-pe
+acl,9749ab72-8041-4a3a-aae9-b14db78ec774
+CREAR ALLOW 9749ab72-8041-4a3a-aae9-b14db78ec774,CustomerInteraction-3.0-acl,CustomerInteractionRole
+actualizada CustomerInteraction-3.0-acl
+acl,97c3318c-ccb4-4bf1-ad45-0fec62f9b8ab
+CREAR ALLOW 97c3318c-ccb4-4bf1-ad45-0fec62f9b8ab,ResourceOrdering-5.0-acl-upor-optimus-co,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl-upor-optimus-co
+acl,98150b8e-a574-4944-a675-271f845690be
+CREAR ALLOW 98150b8e-a574-4944-a675-271f845690be,AgreementManagement-3.0-acl-tac-optimus-cl,AgreementManagementRole
+actualizada AgreementManagement-3.0-acl-tac-optimus-cl
+acl,9852eea4-470c-4ef0-88f6-45cdf8db5313
+CREAR ALLOW 9852eea4-470c-4ef0-88f6-45cdf8db5313,WorkforceManagement-3.0-acl-getwobycust-optimus-pe,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-pe
+acl,98df41f7-f5e0-48c3-8419-036a54a6b9f4
+CREAR ALLOW 98df41f7-f5e0-48c3-8419-036a54a6b9f4,WorkforceManagement-3.0-acl-create-wo-optimus-co,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-create-wo-optimus-co
+acl,99dcd262-eece-4376-8fa4-87b298cd0a72
+CREAR ALLOW 99dcd262-eece-4376-8fa4-87b298cd0a72,ServiceQualityManagement-2.0-acl-csl-optimus-co,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl-csl-optimus-co
+acl,9a9fdb4e-177f-4812-8ff8-d8f931864747
+CREAR ALLOW 9a9fdb4e-177f-4812-8ff8-d8f931864747,IdentityManagement-3.0-acl,IdentityManagementRole
+actualizada IdentityManagement-3.0-acl
+acl,9b4b4b64-b74c-4d8a-ad1a-afd61f26b842
+CREAR ALLOW 9b4b4b64-b74c-4d8a-ad1a-afd61f26b842,ResourceInventoryManagement-6.0-acl-prbycust-optimus-co,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-co
+acl,9bf2cbb9-fb3d-4a3a-a655-4b7120d576e9
+CREAR ALLOW 9bf2cbb9-fb3d-4a3a-a655-4b7120d576e9,LoyaltyManagement-1.0-acl,LoyaltyManagementRole
+actualizada LoyaltyManagement-1.0-acl
+acl,9c85b4a3-2fce-4967-94a5-cf68a6c9f114
+CREAR ALLOW 9c85b4a3-2fce-4967-94a5-cf68a6c9f114,ServiceQualityManagement-1.0-acl,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-1.0-acl
+app.next /plugins?offset=WyI5Yzg1YjRhMy0yZmNlLTQ5NjctOTRhNS1jZjY4YTZjOWYxMTQiXQ
+OK
+acl,9e714cb8-9955-42cf-a99a-3a6a29bce1b2
+CREAR ALLOW 9e714cb8-9955-42cf-a99a-3a6a29bce1b2,CustomerManagement-11.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-11.0-acl-cbycr-optimus-r2
+acl,9f884cc2-38ca-4e7b-b638-933e2a55c1ea
+CREAR ALLOW 9f884cc2-38ca-4e7b-b638-933e2a55c1ea,ResourceOrdering-2.0-acl,ResourceOrderingRole
+actualizada ResourceOrdering-2.0-acl
+acl,a01d0b13-60e7-4b39-a54d-2db99b58e845
+CREAR ALLOW a01d0b13-60e7-4b39-a54d-2db99b58e845,ServiceProblemManagement-4.0-acl-s721-optimus-pe,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl-s721-optimus-pe
+acl,a13e2b46-aa23-4841-ae13-7d00982c9783
+CREAR ALLOW a13e2b46-aa23-4841-ae13-7d00982c9783,Provisioning-2.0-acl,ProvisioningRole
+actualizada Provisioning-2.0-acl
+acl,a3c12dba-22ef-4e2e-b20f-0a444d077662
+CREAR ALLOW a3c12dba-22ef-4e2e-b20f-0a444d077662,WorkforceManagement-3.0-acl-create-wo-optimus-uy,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-create-wo-optimus-uy
+acl,a5c75e02-52ac-473a-a5a0-0ee40737cd5f
+CREAR ALLOW a5c75e02-52ac-473a-a5a0-0ee40737cd5f,CustomerManagement-17.0-acl-cbycr-optimus-cl,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-cl
+acl,a797d191-e397-48bb-8d9d-938e735d4fb0
+CREAR ALLOW a797d191-e397-48bb-8d9d-938e735d4fb0,ProductOrdering-14.0-acl,ProductOrderingRole
+actualizada ProductOrdering-14.0-acl
+acl,a79c814e-5419-40db-ab39-a3b9c2a017ff
+CREAR ALLOW a79c814e-5419-40db-ab39-a3b9c2a017ff,AgreementManagement-1.0-acl,AgreementManagementRole
+actualizada AgreementManagement-1.0-acl
+acl,ab60ce7c-9a29-461f-9829-550ac5932490
+CREAR ALLOW ab60ce7c-9a29-461f-9829-550ac5932490,FraudManagement-1.0-acl,FraudManagementRole
+actualizada FraudManagement-1.0-acl
+acl,abb17b6e-848c-4406-98e6-a5cbb81cde89
+CREAR ALLOW abb17b6e-848c-4406-98e6-a5cbb81cde89,CustomerManagement-10.0-acl-cbycr-optimus-cl,CustomerManagementRole
+actualizada CustomerManagement-10.0-acl-cbycr-optimus-cl
+acl,ac816731-fa59-478f-a8fd-67e541e389b1
+CREAR ALLOW ac816731-fa59-478f-a8fd-67e541e389b1,ProductOrdering-12.0-acl,ProductOrderingRole
+actualizada ProductOrdering-12.0-acl
+acl,adc6e459-1436-4d44-85cc-2999ba76f008
+CREAR ALLOW adc6e459-1436-4d44-85cc-2999ba76f008,ActivationConfiguration-2.0-acl,ActivationConfigurationRole
+actualizada ActivationConfiguration-2.0-acl
+acl,adced798-8e85-44ed-928e-e89e85bddf0d
+CREAR ALLOW adced798-8e85-44ed-928e-e89e85bddf0d,ServiceQualityManagement-2.0-acl-csl-optimus-cl,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl-csl-optimus-cl
+acl,aee7f071-a703-4233-a474-75084121e0e1
+CREAR ALLOW aee7f071-a703-4233-a474-75084121e0e1,ProductOrdering-6.0-acl,ProductOrderingRole
+actualizada ProductOrdering-6.0-acl
+acl,af7e72f0-b5e2-4d90-b655-480098632ddd
+CREAR ALLOW af7e72f0-b5e2-4d90-b655-480098632ddd,SalesLead-2.0-acl,SalesLeadRole
+actualizada SalesLead-2.0-acl
+acl,afaa9365-c69e-473c-8d0a-0adf2725342e
+CREAR ALLOW afaa9365-c69e-473c-8d0a-0adf2725342e,ActivationConfiguration-4.0-acl,ActivationConfigurationRole
+actualizada ActivationConfiguration-4.0-acl
+acl,afae7ee3-3df2-4453-8b64-7b9a63f5c134
+CREAR ALLOW afae7ee3-3df2-4453-8b64-7b9a63f5c134,WorkforceManagement-3.0-acl,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl
+acl,b0700ea5-e73c-4175-beeb-75c4869c837d
+CREAR ALLOW b0700ea5-e73c-4175-beeb-75c4869c837d,Provisioning-2.0-acl-ci-optimus-cl,ProvisioningRole
+actualizada Provisioning-2.0-acl-ci-optimus-cl
+acl,b0a8c7d8-3ea4-46e4-8625-4fb1a1685cd8
+CREAR ALLOW b0a8c7d8-3ea4-46e4-8625-4fb1a1685cd8,CustomerManagement-15.0-acl-cbycr-optimus-cl,CustomerManagementRole
+actualizada CustomerManagement-15.0-acl-cbycr-optimus-cl
+acl,b0c3a284-ccfa-479d-8bcd-3ced28c793b0
+CREAR ALLOW b0c3a284-ccfa-479d-8bcd-3ced28c793b0,PartyInteractions-1.0-acl,PartyInteractionsRole
+actualizada PartyInteractions-1.0-acl
+acl,b15d2b62-392d-4759-8fb3-ca38c1a7aa7d
+CREAR ALLOW b15d2b62-392d-4759-8fb3-ca38c1a7aa7d,eSALES-Customer-2.0-acl,eSALESRole
+actualizada eSALES-Customer-2.0-acl
+acl,b1967756-b516-4733-8a31-669c080401b5
+CREAR ALLOW b1967756-b516-4733-8a31-669c080401b5,Provisioning-1.0-acl,ProvisioningRole
+actualizada Provisioning-1.0-acl
+acl,b23290f7-465a-48a4-a62d-067517618c69
+CREAR ALLOW b23290f7-465a-48a4-a62d-067517618c69,PrepayBalanceManagement-4.0-acl,PrepayBalanceManagementRole
+actualizada PrepayBalanceManagement-4.0-acl
+acl,b2723d21-7493-41cc-8329-f9993fbb5fa3
+CREAR ALLOW b2723d21-7493-41cc-8329-f9993fbb5fa3,CustomerManagement-12.0-acl,CustomerManagementRole
+actualizada CustomerManagement-12.0-acl
+acl,b2a54f1f-2447-41f0-bd0f-6d5289f24505
+CREAR ALLOW b2a54f1f-2447-41f0-bd0f-6d5289f24505,ServiceProblemManagement-3.0-acl-s711-optimus-co,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s711-optimus-co
+acl,b2a70329-eeca-4611-9955-39dc7a47974a
+CREAR ALLOW b2a70329-eeca-4611-9955-39dc7a47974a,ResourceInventoryManagement-6.0-acl-upr-optimus-co,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-co
+acl,b2c196c4-055d-4aee-ada7-a43f85402c64
+CREAR ALLOW b2c196c4-055d-4aee-ada7-a43f85402c64,ResourceInventoryManagement-4.0-acl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-4.0-acl
+acl,b3635411-3ed4-42c7-9c45-aa005889ef6e
+CREAR ALLOW b3635411-3ed4-42c7-9c45-aa005889ef6e,BillingManagement-6.0-acl,BillingManagementRole
+actualizada BillingManagement-6.0-acl
+acl,b3be56a3-a64d-45ca-b2ea-4dd855dd5653
+CREAR ALLOW b3be56a3-a64d-45ca-b2ea-4dd855dd5653,ResourceInventoryManagement-6.0-acl-prbycr-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-uy
+acl,b3d341e3-6cc6-435e-862c-cd494b74bdad
+CREAR ALLOW b3d341e3-6cc6-435e-862c-cd494b74bdad,ResourceInventoryManagement-5.0-acl-slpr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-r2
+acl,b43ba8d4-49a5-4fff-9d9b-63e4f74816e1
+CREAR ALLOW b43ba8d4-49a5-4fff-9d9b-63e4f74816e1,WSSDSNETMobile-2.0-acl,WSSDSNETMobileRole
+actualizada WSSDSNETMobile-2.0-acl
+acl,b4e194c7-a0d7-4691-a183-591a4f29d8ea
+CREAR ALLOW b4e194c7-a0d7-4691-a183-591a4f29d8ea,ActivationConfiguration-6.0-acl-s-optimus-cl,ActivationConfigurationRole
+actualizada ActivationConfiguration-6.0-acl-s-optimus-cl
+acl,b548449f-ad42-4a59-9061-4066f9e764a2
+CREAR ALLOW b548449f-ad42-4a59-9061-4066f9e764a2,CustomerManagement-10.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-10.0-acl-cbycr-optimus-r2
+acl,b5505ecc-d81e-4786-aea0-dd3f1730d0dd
+CREAR ALLOW b5505ecc-d81e-4786-aea0-dd3f1730d0dd,ResourceInventoryManagement-5.0-acl-spr-optimus-co,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-co
+acl,b60df92b-0cd7-4587-83f3-37c75a11f29e
+CREAR ALLOW b60df92b-0cd7-4587-83f3-37c75a11f29e,ResourceInventoryManagement-5.0-acl-spr-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-pe
+acl,b7330907-ded9-4c2d-a49e-6773e21aca0c
+CREAR ALLOW b7330907-ded9-4c2d-a49e-6773e21aca0c,ResourceInventoryManagement-6.0-acl-slpr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-slpr-optimus-r2
+acl,b8a26cf2-2330-4f34-98a8-b0533ef8c0a0
+CREAR ALLOW b8a26cf2-2330-4f34-98a8-b0533ef8c0a0,DocumentManagement-5.0-acl,DocumentManagementRole
+actualizada DocumentManagement-5.0-acl
+acl,b9295841-b8ab-4b93-8fce-27c84bf5e48f
+CREAR ALLOW b9295841-b8ab-4b93-8fce-27c84bf5e48f,ServiceProblemManagement-4.0-acl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl
+acl,b954ecd6-ce7f-46c5-8522-c7a6b7be69f4
+CREAR ALLOW b954ecd6-ce7f-46c5-8522-c7a6b7be69f4,ResourceInventoryManagement-6.0-acl-upr-optimus-pe,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-pe
+acl,ba1e868e-f893-4083-a807-199a9dba0d43
+CREAR ALLOW ba1e868e-f893-4083-a807-199a9dba0d43,TestJenkins-2.0-acl,TestJenkinsRole
+actualizada TestJenkins-2.0-acl
+acl,ba8ed102-6a7f-44dc-9326-2672846824c1
+CREAR ALLOW ba8ed102-6a7f-44dc-9326-2672846824c1,ProductOrdering-9.0-acl,ProductOrderingRole
+actualizada ProductOrdering-9.0-acl
+acl,bb8e0be5-3ec5-419f-baec-920d933f0567
+CREAR ALLOW bb8e0be5-3ec5-419f-baec-920d933f0567,PartyInteractionManagement-1.0-acl,PartyInteractionManagementRole
+actualizada PartyInteractionManagement-1.0-acl
+acl,bc3c9702-3453-44bc-baad-2dcb722b6a17
+CREAR ALLOW bc3c9702-3453-44bc-baad-2dcb722b6a17,WorkforceManagement-3.0-acl-getwobycust-optimus-r1,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-r1
+acl,bc5185d8-d154-4ac3-b90b-cdf2aff848d8
+CREAR ALLOW bc5185d8-d154-4ac3-b90b-cdf2aff848d8,ProductInventoryManagement-4.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-4.0-acl
+acl,bc8f27f3-5c24-4a89-895e-b1c362c0a036
+CREAR ALLOW bc8f27f3-5c24-4a89-895e-b1c362c0a036,ServiceProblemManagement-4.0-acl-s721-optimus-r2,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl-s721-optimus-r2
+acl,bdd091c6-938f-4cc9-a145-ab0d1c4f5134
+CREAR ALLOW bdd091c6-938f-4cc9-a145-ab0d1c4f5134,CustomerManagement-17.0-acl-cbycr-optimus-co,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-co
+acl,bdfaaea9-6de6-4128-a5a4-af9008050515
+CREAR ALLOW bdfaaea9-6de6-4128-a5a4-af9008050515,PrepayBalanceManagement-6.0-acl,PrepayBalanceManagementRole
+actualizada PrepayBalanceManagement-6.0-acl
+acl,bf77701f-13fe-4835-a055-d986c91e40fa
+CREAR ALLOW bf77701f-13fe-4835-a055-d986c91e40fa,COBRO-ONLINE-1.0-acl,COBRORole
+actualizada COBRO-ONLINE-1.0-acl
+acl,c2347f41-ff8a-4b76-a06d-831d2c72df90
+CREAR ALLOW c2347f41-ff8a-4b76-a06d-831d2c72df90,ActivationConfiguration-6.0-acl-s-optimus-uy,ActivationConfigurationRole
+actualizada ActivationConfiguration-6.0-acl-s-optimus-uy
+acl,c23f58e4-fe20-4b9b-92b1-2c32108d9ad1
+CREAR ALLOW c23f58e4-fe20-4b9b-92b1-2c32108d9ad1,ServiceProblemManagement-3.0-acl-s711-optimus-uy,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s711-optimus-uy
+acl,c3340ac6-a5cf-4577-a018-e2e917709227
+CREAR ALLOW c3340ac6-a5cf-4577-a018-e2e917709227,PaymentMethod-2.0-acl,PaymentMethodRole
+actualizada PaymentMethod-2.0-acl
+acl,c3e0c8dc-f98d-4d50-a105-1f3c843730bb
+CREAR ALLOW c3e0c8dc-f98d-4d50-a105-1f3c843730bb,ContactMedium-2.0-acl,ContactMediumRole
+actualizada ContactMedium-2.0-acl
+acl,c49ebecd-1199-4a3b-a7a3-edf45b0a9ce5
+CREAR ALLOW c49ebecd-1199-4a3b-a7a3-edf45b0a9ce5,Location-6.0-acl,LocationRole
+actualizada Location-6.0-acl
+acl,c524d376-6a24-4854-9944-8adb50f69f4f
+CREAR ALLOW c524d376-6a24-4854-9944-8adb50f69f4f,WorkforceManagement-3.0-acl-comp-wo-optimus-r1,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-comp-wo-optimus-r1
+acl,c5beeaa3-4de8-4c64-970b-2b00ebd781e0
+CREAR ALLOW c5beeaa3-4de8-4c64-970b-2b00ebd781e0,ServiceProblemManagement-3.0-acl-s721-optimus-ec,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-ec
+acl,c78be0f1-7027-4c3f-8b35-1d32597b1bd8
+CREAR ALLOW c78be0f1-7027-4c3f-8b35-1d32597b1bd8,ResourceOrdering-1.0-acl,ResourceOrderingRole
+actualizada ResourceOrdering-1.0-acl
+acl,c80ca472-6d54-4aee-b9f2-253844e2582f
+CREAR ALLOW c80ca472-6d54-4aee-b9f2-253844e2582f,ContactMedium-V1.0-acl,ContactMediumRole
+actualizada ContactMedium-V1.0-acl
+acl,c8270105-6266-4a7a-9283-4ea1d03f9f07
+CREAR ALLOW c8270105-6266-4a7a-9283-4ea1d03f9f07,WorkforceManagement-3.0-acl-getwobycust-optimus-uy,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-uy
+acl,cab3eeb2-2e56-497f-85af-4b90f8d6481d
+CREAR ALLOW cab3eeb2-2e56-497f-85af-4b90f8d6481d,CustomerInteraction-2.0-acl,CustomerInteractionRole
+actualizada CustomerInteraction-2.0-acl
+acl,cd2bd185-837d-4a64-9500-4e4a32c592b4
+CREAR ALLOW cd2bd185-837d-4a64-9500-4e4a32c592b4,Provisioning-1.0-acl-upos-optimus-co,ProvisioningRole
+actualizada Provisioning-1.0-acl-upos-optimus-co
+acl,cd35a078-8d45-4269-821a-31d66d3fa2bb
+CREAR ALLOW cd35a078-8d45-4269-821a-31d66d3fa2bb,ResourceOrdering-5.0-acl-upor-optimus-cl,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl-upor-optimus-cl
+acl,cdc9fcb5-ca2f-4071-83bc-56ed9abd9f9f
+CREAR ALLOW cdc9fcb5-ca2f-4071-83bc-56ed9abd9f9f,ProductOrdering-10.0-acl,ProductOrderingRole
+actualizada ProductOrdering-10.0-acl
+acl,ce2e40f9-b7ff-4fce-92d7-ec06eb9805c8
+CREAR ALLOW ce2e40f9-b7ff-4fce-92d7-ec06eb9805c8,AccountManagement-4.0-acl,AccountManagementRole
+actualizada AccountManagement-4.0-acl
+acl,cfe39ed1-c8d3-4172-a6d7-248e7eb1979a
+CREAR ALLOW cfe39ed1-c8d3-4172-a6d7-248e7eb1979a,BillingManagement-3.0-acl,BillingManagementRole
+actualizada BillingManagement-3.0-acl
+acl,d15ba8cc-95fe-4389-9b54-721974a64b3e
+CREAR ALLOW d15ba8cc-95fe-4389-9b54-721974a64b3e,PaymentManagement-10.0-acl,PaymentManagementRole
+actualizada PaymentManagement-10.0-acl
+acl,d1aec862-8928-4011-a552-c20efd16fad7
+CREAR ALLOW d1aec862-8928-4011-a552-c20efd16fad7,ActivationConfiguration-5.0-acl,ActivationConfigurationRole
+actualizada ActivationConfiguration-5.0-acl
+acl,d1fb406e-baa6-44dc-af0e-0f1503db67c4
+CREAR ALLOW d1fb406e-baa6-44dc-af0e-0f1503db67c4,ServiceQualityManagement-2.0-acl-csl-optimus-pe,ServiceQualityManagementRole
+actualizada ServiceQualityManagement-2.0-acl-csl-optimus-pe
+acl,d22c3b5d-d627-4b92-868a-c4896f45d274
+CREAR ALLOW d22c3b5d-d627-4b92-868a-c4896f45d274,ProductInventoryManagement-2.0-acl,ProductInventoryManagementRole
+actualizada ProductInventoryManagement-2.0-acl
+acl,d28926a9-62a7-4e22-963c-25496ab186d8
+CREAR ALLOW d28926a9-62a7-4e22-963c-25496ab186d8,Provisioning-1.0-acl-ci-optimus-r2,ProvisioningRole
+actualizada Provisioning-1.0-acl-ci-optimus-r2
+acl,d2ef190b-eb67-432f-a0b9-31958e8e6e0e
+CREAR ALLOW d2ef190b-eb67-432f-a0b9-31958e8e6e0e,ServiceProblemManagement-4.0-acl-s721-optimus-cl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl-s721-optimus-cl
+acl,d3016851-f087-45bf-9f7a-9fb771e5ce87
+CREAR ALLOW d3016851-f087-45bf-9f7a-9fb771e5ce87,SalesLead-1.0-acl,SalesLeadRole
+actualizada SalesLead-1.0-acl
+acl,d3c1f022-a5e7-4e9a-8a99-a4fedfa8f217
+CREAR ALLOW d3c1f022-a5e7-4e9a-8a99-a4fedfa8f217,WorkforceManagement-3.0-acl-getwobycust-optimus-ec,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-getwobycust-optimus-ec
+acl,d462d9a1-fbb2-44d0-b814-99caf1bd10f4
+CREAR ALLOW d462d9a1-fbb2-44d0-b814-99caf1bd10f4,WorkforceManagement-3.0-acl-create-wo-optimus-r2,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-create-wo-optimus-r2
+acl,d579cb4b-9b8d-4742-af8e-a28141d5fa67
+CREAR ALLOW d579cb4b-9b8d-4742-af8e-a28141d5fa67,ServiceProblemManagement-3.0-acl-s721-optimus-r2,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-r2
+acl,d7203cba-e593-4a20-9758-294361bf90bf
+CREAR ALLOW d7203cba-e593-4a20-9758-294361bf90bf,ResourceInventoryManagement-6.0-acl-slpr-optimus-cl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-slpr-optimus-cl
+acl,d73f1302-d2c5-4e1e-bb7b-cf0d730b2421
+CREAR ALLOW d73f1302-d2c5-4e1e-bb7b-cf0d730b2421,PrepayBalanceManagement-1.0-acl,PrepayBalanceManagementRole
+actualizada PrepayBalanceManagement-1.0-acl
+acl,d798e913-71ca-442c-a4ef-601b811202f9
+CREAR ALLOW d798e913-71ca-442c-a4ef-601b811202f9,ResourceInventoryManagement-5.0-acl,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl
+acl,d84662ff-a9ee-47b4-a102-c57050f5d537
+CREAR ALLOW d84662ff-a9ee-47b4-a102-c57050f5d537,Provisioning-1.0-acl-fi-optimus-r2,ProvisioningRole
+actualizada Provisioning-1.0-acl-fi-optimus-r2
+acl,d8b656df-23c1-47c8-bf18-c03dce9774f3
+CREAR ALLOW d8b656df-23c1-47c8-bf18-c03dce9774f3,CustomerManagement-17.0-acl,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl
+acl,d8ddace9-7ea3-4066-a52e-0b774bf25cd7
+CREAR ALLOW d8ddace9-7ea3-4066-a52e-0b774bf25cd7,WSSDSNETMobile-4.0-acl,WSSDSNETMobileRole
+actualizada WSSDSNETMobile-4.0-acl
+acl,d8f88ff1-6687-428c-9c96-a1b0555555fd
+CREAR ALLOW d8f88ff1-6687-428c-9c96-a1b0555555fd,ElegibleProductOffering-5.0-acl,ElegibleProductOfferingRole
+actualizada ElegibleProductOffering-5.0-acl
+acl,d91cb734-824c-42eb-a414-ff168dcf6e6c
+CREAR ALLOW d91cb734-824c-42eb-a414-ff168dcf6e6c,CustomerManagement-17.0-acl-cbycr-optimus-uy,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-uy
+acl,d926e0bc-3728-4091-b5bb-c01a727204c5
+CREAR ALLOW d926e0bc-3728-4091-b5bb-c01a727204c5,AuthorizationManagement-1.0-acl-merlin-R1,AuthorizationManagementRole
+actualizada AuthorizationManagement-1.0-acl-merlin-R1
+acl,dba837ca-dd29-4fa4-8617-e81a6fc76d71
+CREAR ALLOW dba837ca-dd29-4fa4-8617-e81a6fc76d71,PaymentManagement-8.0-acl,PaymentManagementRole
+actualizada PaymentManagement-8.0-acl
+acl,dc02c60a-45b7-4a8c-bf53-be5b717aed71
+CREAR ALLOW dc02c60a-45b7-4a8c-bf53-be5b717aed71,eSALES-Customer-1.0-acl,eSALESRole
+actualizada eSALES-Customer-1.0-acl
+acl,dc1a782a-deac-4864-ba48-a4a1e0b3fe78
+CREAR ALLOW dc1a782a-deac-4864-ba48-a4a1e0b3fe78,ResourceOrdering-5.0-acl-cpor-optimus-co,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl-cpor-optimus-co
+acl,de79807f-4f78-4299-aff7-06d5a4aa8c7e
+CREAR ALLOW de79807f-4f78-4299-aff7-06d5a4aa8c7e,ServiceProblemManagement-4.0-acl-s711-optimus-cl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-4.0-acl-s711-optimus-cl
+acl,e15680c9-d102-4dce-855b-202b50d5b7cf
+CREAR ALLOW e15680c9-d102-4dce-855b-202b50d5b7cf,ServiceProblemManagement-5.0-acl-s721-optimus-r2,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-5.0-acl-s721-optimus-r2
+acl,e1999956-2953-41ba-ba66-256b1a0ed33a
+CREAR ALLOW e1999956-2953-41ba-ba66-256b1a0ed33a,AgreementManagement-3.0-acl,AgreementManagementRole
+actualizada AgreementManagement-3.0-acl
+acl,e29c3a94-66d0-4361-99c9-16b11696fcd0
+CREAR ALLOW e29c3a94-66d0-4361-99c9-16b11696fcd0,ServiceProblemManagement-3.0-acl,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl
+acl,e50f019f-c51d-4ae5-b153-f961ae0c5f5c
+CREAR ALLOW e50f019f-c51d-4ae5-b153-f961ae0c5f5c,CustomerManagement-13.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-13.0-acl-cbycr-optimus-r2
+acl,e5382728-0919-407a-a640-2016e42cf8a9
+CREAR ALLOW e5382728-0919-407a-a640-2016e42cf8a9,PaymentManagement-7.0-acl,PaymentManagementRole
+actualizada PaymentManagement-7.0-acl
+acl,e6658c5e-d64a-4666-b29d-7e96d7c48a24
+CREAR ALLOW e6658c5e-d64a-4666-b29d-7e96d7c48a24,CustomerManagement-17.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-17.0-acl-cbycr-optimus-r2
+app.next /plugins?offset=WyJlNjY1OGM1ZS1kNjRhLTQ2NjYtYjI5ZC03ZTk2ZDdjNDhhMjQiXQ
+OK
+acl,e6bc9749-d1ba-4d1e-b83e-2b3298b508ef
+CREAR ALLOW e6bc9749-d1ba-4d1e-b83e-2b3298b508ef,Provisioning-1.0-acl-ci-optimus-cl,ProvisioningRole
+actualizada Provisioning-1.0-acl-ci-optimus-cl
+acl,e77ae238-ac60-4656-a58a-27fb1d00a546
+CREAR ALLOW e77ae238-ac60-4656-a58a-27fb1d00a546,ResourceInventoryManagement-6.0-acl-upr-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-upr-optimus-uy
+acl,e9890620-d168-414c-a31c-3d910ae3bf99
+CREAR ALLOW e9890620-d168-414c-a31c-3d910ae3bf99,ServiceProblemManagement-3.0-acl-s721-optimus-co,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-3.0-acl-s721-optimus-co
+acl,e9c5c945-daf4-4697-92f0-ec61ceca1806
+CREAR ALLOW e9c5c945-daf4-4697-92f0-ec61ceca1806,ActivationConfiguration-6.0-acl-s-optimus-co,ActivationConfigurationRole
+actualizada ActivationConfiguration-6.0-acl-s-optimus-co
+acl,e9fece06-b256-4c08-bd45-01858a6fdb4a
+CREAR ALLOW e9fece06-b256-4c08-bd45-01858a6fdb4a,ElegibleProductOffering-6.0-acl,ElegibleProductOfferingRole
+actualizada ElegibleProductOffering-6.0-acl
+acl,ea626842-1be6-4d99-af74-cfa1cac9fb69
+CREAR ALLOW ea626842-1be6-4d99-af74-cfa1cac9fb69,ResourceInventoryManagement-6.0-acl-prbycust-optimus-ec,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycust-optimus-ec
+acl,eab6c04a-c55d-44d3-9951-bdca8e870d7f
+CREAR ALLOW eab6c04a-c55d-44d3-9951-bdca8e870d7f,CustomerManagement-12.0-acl-cbycr-optimus-r2,CustomerManagementRole
+actualizada CustomerManagement-12.0-acl-cbycr-optimus-r2
+acl,ebe55d2f-ee21-40fc-8f9c-624bf1cce2fd
+CREAR ALLOW ebe55d2f-ee21-40fc-8f9c-624bf1cce2fd,WorkforceManagement-3.0-acl-comp-wo-optimus-ar,WorkforceManagementRole
+actualizada WorkforceManagement-3.0-acl-comp-wo-optimus-ar
+acl,ed70bb7b-bf45-4be1-9844-a02ba1eacfbb
+CREAR ALLOW ed70bb7b-bf45-4be1-9844-a02ba1eacfbb,Promotion-2.0-acl,PromotionRole
+actualizada Promotion-2.0-acl
+acl,eda51be8-1e9b-46c7-a5de-4c9a9ea13f7c
+CREAR ALLOW eda51be8-1e9b-46c7-a5de-4c9a9ea13f7c,ProductCatalog-1.0-acl,ProductCatalogRole
+actualizada ProductCatalog-1.0-acl
+acl,ee043e1a-b18d-48f9-bb9f-c8da1220eed4
+CREAR ALLOW ee043e1a-b18d-48f9-bb9f-c8da1220eed4,IdentityManagement-1.0-acl,IdentityManagementRole
+actualizada IdentityManagement-1.0-acl
+acl,ee49c897-a9cf-4253-8336-1a9835885686
+CREAR ALLOW ee49c897-a9cf-4253-8336-1a9835885686,ConfigSecrets-1.0-acl,ConfigSecretsRole
+actualizada ConfigSecrets-1.0-acl
+acl,f1e98ec5-84eb-4c9e-9d98-6d0f658f2ea7
+CREAR ALLOW f1e98ec5-84eb-4c9e-9d98-6d0f658f2ea7,Appointment-2.0-acl,AppointmentRole
+actualizada Appointment-2.0-acl
+acl,f2e3ad7e-1040-4945-98f7-60511e11190e
+CREAR ALLOW f2e3ad7e-1040-4945-98f7-60511e11190e,PaymentManagement-4.0-acl,PaymentManagementRole
+actualizada PaymentManagement-4.0-acl
+acl,f350b2bb-b9a6-4273-9df9-a796a51f4df0
+CREAR ALLOW f350b2bb-b9a6-4273-9df9-a796a51f4df0,ResourceInventoryManagement-6.0-acl-prbycr-optimus-r2,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-6.0-acl-prbycr-optimus-r2
+acl,f4310eaf-0c13-4978-a740-10962957c1a0
+CREAR ALLOW f4310eaf-0c13-4978-a740-10962957c1a0,ResourceInventoryManagement-5.0-acl-slpr-optimus-ec,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-slpr-optimus-ec
+acl,f5f6f671-1677-40bb-868a-433d0bd2c30f
+CREAR ALLOW f5f6f671-1677-40bb-868a-433d0bd2c30f,ServiceProblemManagement-5.0-acl-s711-optimus-r2,ServiceProblemManagementRole
+actualizada ServiceProblemManagement-5.0-acl-s711-optimus-r2
+acl,f61a5a78-33ef-4598-ad75-1a61327e429d
+CREAR ALLOW f61a5a78-33ef-4598-ad75-1a61327e429d,PaymentMethod-1.0-acl,PaymentMethodRole
+actualizada PaymentMethod-1.0-acl
+acl,f64214b2-7c29-480d-b754-2ff72ebd8714
+CREAR ALLOW f64214b2-7c29-480d-b754-2ff72ebd8714,AccountManagement-3.0-acl,AccountManagementRole
+actualizada AccountManagement-3.0-acl
+acl,f9c17f4c-0469-4718-8b82-7d628f6828c2
+CREAR ALLOW f9c17f4c-0469-4718-8b82-7d628f6828c2,CustomerBillManagement-5.0-acl,CustomerBillManagementRole
+actualizada CustomerBillManagement-5.0-acl
+acl,f9de1858-b883-4acf-b67a-097692b664ea
+CREAR ALLOW f9de1858-b883-4acf-b67a-097692b664ea,ResourceInventoryManagement-5.0-acl-spr-optimus-uy,ResourceInventoryManagementRole
+actualizada ResourceInventoryManagement-5.0-acl-spr-optimus-uy
+acl,fa12dd4a-df8b-4f8d-8a4f-c3383971088d
+CREAR ALLOW fa12dd4a-df8b-4f8d-8a4f-c3383971088d,PaymentManagement-9.0-acl,PaymentManagementRole
+actualizada PaymentManagement-9.0-acl
+acl,fac63021-5e92-41e6-b6ca-5b8659c4e9dd
+CREAR ALLOW fac63021-5e92-41e6-b6ca-5b8659c4e9dd,Location-4.0-acl,LocationRole
+actualizada Location-4.0-acl
+acl,fae4a000-6135-404e-93b5-0adc4c0dec86
+CREAR ALLOW fae4a000-6135-404e-93b5-0adc4c0dec86,ProductOrdering-18.0-acl,ProductOrderingRole
+actualizada ProductOrdering-18.0-acl
+acl,fb6f8cb5-44af-4789-bcd4-2e32e2f57da2
+CREAR ALLOW fb6f8cb5-44af-4789-bcd4-2e32e2f57da2,CustomerManagement-13.0-acl,CustomerManagementRole
+actualizada CustomerManagement-13.0-acl
+acl,fd52579d-1a98-4335-abcd-c52e74bdd597
+CREAR ALLOW fd52579d-1a98-4335-abcd-c52e74bdd597,PrepayBalanceManagement-3.0-acl,PrepayBalanceManagementRole
+actualizada PrepayBalanceManagement-3.0-acl
+acl,fecc484e-5f44-4a6c-99c0-7628c09f64eb
+CREAR ALLOW fecc484e-5f44-4a6c-99c0-7628c09f64eb,CustomerInteraction-1.0-acl,CustomerInteractionRole
+actualizada CustomerInteraction-1.0-acl
+acl,fece7f39-ebb7-4f2a-ba75-9ab07645d7b3
+CREAR ALLOW fece7f39-ebb7-4f2a-ba75-9ab07645d7b3,DocumentManagement-7.0-acl-cf-optimus-cl,DocumentManagementRole
+actualizada DocumentManagement-7.0-acl-cf-optimus-cl
+acl,fedbe603-7aef-4f44-bf9c-4ba8d8885434
+CREAR ALLOW fedbe603-7aef-4f44-bf9c-4ba8d8885434,DocumentManagement-2.0-acl,DocumentManagementRole
+actualizada DocumentManagement-2.0-acl
+acl,ff103f43-4252-43d8-9fb6-27d67631ccb9
+CREAR ALLOW ff103f43-4252-43d8-9fb6-27d67631ccb9,DocumentManagement-4.0-acl,DocumentManagementRole
+actualizada DocumentManagement-4.0-acl
+acl,fff091d1-e598-4106-b1ed-4dd84a1435f4
+CREAR ALLOW fff091d1-e598-4106-b1ed-4dd84a1435f4,ResourceOrdering-5.0-acl-upor-optimus-PE,ResourceOrderingRole
+actualizada ResourceOrdering-5.0-acl-upor-optimus-PE
+app.next 
+Fin

@@ -516,7 +516,8 @@ namespace revisaProyectosSCA_V2
                                 var operation_invoked = ljca.DestinationName;
                                 var partner_link = "";
                                 var port_type = ljca.cdLocation;
-                                grabaRelacionQueue(operation_name, service_name, my_port_type, operation_invoked, partner_link, port_type, folderName, file_name);
+                                var mess_sel = ljca.MessageSelector;
+                                grabaRelacionQueue(operation_name, service_name, my_port_type, operation_invoked, partner_link, port_type, mess_sel, folderName, file_name);
                             }
                         //}
                     }
@@ -571,7 +572,7 @@ namespace revisaProyectosSCA_V2
                         }
                         //if operation_invoked in getDVM, GetHomologationByCanonicalCode, GetHomologationCollectionByCanonicalCategoryCode
                         var parameter_to_config = "";
-                        if (operation_invoked == "getDVM" || operation_invoked == "GetHomologationByCanonicalCode" ||  operation_invoked == "GetHomologationCollectionByCanonicalCategoryCode" ||  operation_invoked == "getParameter" )
+                        if (operation_invoked == "getDVM" || operation_invoked == "GetHomologationByCanonicalCode" ||  operation_invoked == "GetHomologationCollectionByCanonicalCategoryCode" ||  operation_invoked == "getParameter" ||  operation_invoked == "GetCountryByDSN" ||  operation_invoked == "GetConnectionContextByDSN" )
                         {
                             //buscar assign para input variable
                              var stepsPNInv = nodo.ParentNode;
@@ -591,18 +592,47 @@ namespace revisaProyectosSCA_V2
                                                     if (nodeStepAC.Attributes["query"] != null)                                      
                                                     {
                                                         var queryP = nodeStepAC.Attributes["query"].InnerText;
-                                                        if (queryP.Contains("Entity") || queryP.Contains("GetHomologationByCanonicalCode") || queryP.Contains("GetHomologationCollectionByCanonicalCategoryCode") || queryP.Contains("Category") )
+                                                        if (queryP.Contains("Entity") || queryP.Contains("GetHomologationByCanonicalCode") || queryP.Contains("GetHomologationCollectionByCanonicalCategoryCode") || queryP.Contains("Category") || queryP.Contains("dsn") )
                                                         {
                                                             if (nodeStepAC.PreviousSibling.Attributes["expression"] != null)
                                                             {
-                                                                parameter_to_config = nodeStepAC.PreviousSibling.Attributes["expression"].InnerText;
+                                                                parameter_to_config += nodeStepAC.PreviousSibling.Attributes["expression"].InnerText + ";";
+                                                            }
+                                                            else
+                                                            {
+                                                                if (nodeStepAC.PreviousSibling.Attributes["query"] != null)
+                                                                {
+                                                                    parameter_to_config += nodeStepAC.PreviousSibling.Attributes["query"].InnerText + ";";
+                                                                }
                                                             }
                                                         }
                                                     }
                                                     else{
                                                         if (nodeStepAC.PreviousSibling.Attributes["expression"] != null)
                                                         {
-                                                            parameter_to_config = nodeStepAC.PreviousSibling.Attributes["expression"].InnerText;
+                                                            parameter_to_config += nodeStepAC.PreviousSibling.Attributes["expression"].InnerText + ";";
+                                                        }
+                                                        if (nodeStepAC.PreviousSibling.Attributes["query"] != null)
+                                                        {
+                                                            parameter_to_config += nodeStepAC.PreviousSibling.Attributes["query"].InnerText + ";";
+                                                        }
+                                                        if (nodeStepAC.PreviousSibling.InnerText != null)
+                                                        {
+                                                            parameter_to_config += nodeStepAC.PreviousSibling.InnerText + ";";
+                                                        }
+                                                    }
+                                                }
+                                                if (nodeStepAC.Name == "to" && nodeStepAC.InnerText != null && nodeStepAC.InnerText.Contains(input_variable))
+                                                {              
+                                                    if (nodeStepAC.InnerText != null)                                      
+                                                    {
+                                                        var queryP = nodeStepAC.InnerText;
+                                                        if (queryP.Contains("Entity") || queryP.Contains("GetHomologationByCanonicalCode") || queryP.Contains("GetHomologationCollectionByCanonicalCategoryCode") || queryP.Contains("Category") )
+                                                        {
+                                                            if (nodeStepAC.PreviousSibling.InnerText != null)
+                                                            {
+                                                                parameter_to_config += nodeStepAC.PreviousSibling.InnerText + ";";
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -635,7 +665,7 @@ namespace revisaProyectosSCA_V2
             }
         }
 
-        private void grabaRelacionQueue(string operationName, string serviceName, string portType, string operationInvoked, string serviceIvoked, string portTypeInv, string folderName, string bpelName)
+        private void grabaRelacionQueue(string operationName, string serviceName, string portType, string operationInvoked, string serviceIvoked, string portTypeInv, string mess_sel, string folderName, string bpelName)
         {
             if (operationName == null)
             {
@@ -646,7 +676,7 @@ namespace revisaProyectosSCA_V2
             portTypeInv = portTypeInv.Contains(":") ? portTypeInv.Remove(0, portTypeInv.IndexOf(":") + 1) : portTypeInv;
             portType = portType.Contains(":") ? portType.Remove(0, portType.IndexOf(":") + 1) : portType;
 
-            string linea = string.Format ("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", operationName, serviceName, operationInvoked, serviceIvoked, fixPortType(operationName, serviceName, "", folderName, portType), portType, fixPortType(operationName, serviceName, bpelName, folderName, portType));
+            string linea = string.Format ("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}", operationName, serviceName, operationInvoked, serviceIvoked, fixPortType(operationName, serviceName, "", folderName, portType), portType, mess_sel, fixPortType(operationName, serviceName, bpelName, folderName, portType));
             archRelQ = new StreamWriter(ConfigurationManager.AppSettings["Path"] + nombre_archRelQ, true);
             archRelQ.WriteLine(linea);
             archRelQ.Close();
